@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Disneyland Paris — Heat & Queue Map</title>
+  <meta name="description" content="Interactive Disneyland Paris map showing air-conditioned refuges, Premier Access attractions, and heat-smart touring for a hot-weather visit." />
+
+  <!-- Leaflet from CDN -->
+  <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="map" aria-label="Map of Disneyland Paris"></div>
+
+  <!-- Legend / filter panel -->
+  <aside id="legend" class="panel" aria-label="Legend and filters">
+    <button id="legend-toggle" class="legend-toggle" aria-expanded="true" aria-controls="legend-body">
+      <span class="legend-title">🗺️ Legend &amp; filters</span>
+      <span class="chevron" aria-hidden="true">▾</span>
+    </button>
+
+    <div id="legend-body" class="legend-body">
+      <p class="hint">Tick or untick to filter the map. A location is shown only if it passes <em>every</em> group.</p>
+
+      <section class="filter-group" data-group="park">
+        <h3>Parks</h3>
+        <label><input type="checkbox" data-filter="park" value="DLP" checked /> <span class="swatch">🏰</span> Disneyland Park</label>
+        <label><input type="checkbox" data-filter="park" value="WDS" checked /> <span class="swatch">🎬</span> Disney Adventure World</label>
+      </section>
+
+      <section class="filter-group" data-group="category">
+        <h3>Categories</h3>
+        <label><input type="checkbox" data-filter="category" value="attraction" checked /> <span class="swatch">🎢</span> Attractions / rides</label>
+        <label><input type="checkbox" data-filter="category" value="show" checked /> <span class="swatch">🎭</span> Shows &amp; entertainment</label>
+        <label><input type="checkbox" data-filter="category" value="restaurant" checked /> <span class="swatch">🍴</span> Restaurants &amp; dining</label>
+        <label><input type="checkbox" data-filter="category" value="shop" checked /> <span class="swatch">🛍️</span> Shops</label>
+        <label><input type="checkbox" data-filter="category" value="character" checked /> <span class="swatch">🐭</span> Character meets</label>
+        <label><input type="checkbox" data-filter="category" value="amenity" checked /> <span class="swatch">🚻</span> Amenities (toilets / water / first aid)</label>
+      </section>
+
+      <section class="filter-group" data-group="queueEnv">
+        <h3>Queue comfort</h3>
+        <label><input type="checkbox" data-filter="queueEnv" value="ac" checked /> <span class="swatch">❄️</span> Air-conditioned queue</label>
+        <label><input type="checkbox" data-filter="queueEnv" value="shaded" checked /> <span class="swatch">⛱️</span> Shaded / covered queue</label>
+        <label><input type="checkbox" data-filter="queueEnv" value="sun" checked /> <span class="swatch">☀️</span> Full-sun queue</label>
+      </section>
+
+      <section class="filter-group" data-group="venueEnv">
+        <h3>Venue (the experience itself)</h3>
+        <label><input type="checkbox" data-filter="venueEnv" value="indoor-ac" checked /> <span class="swatch">🧊</span> Indoor, air-conditioned</label>
+        <label><input type="checkbox" data-filter="venueEnv" value="indoor" checked /> <span class="swatch">🏠</span> Indoor, not A/C</label>
+        <label><input type="checkbox" data-filter="venueEnv" value="outdoor" checked /> <span class="swatch">🌳</span> Outdoor</label>
+      </section>
+
+      <section class="filter-group" data-group="premierAccess">
+        <h3>Premier Access</h3>
+        <label><input type="checkbox" id="filter-pa-only" /> <span class="swatch">⚡</span> Show only Premier Access locations</label>
+      </section>
+
+      <section class="filter-group" data-group="labels">
+        <h3>Labels</h3>
+        <label><input type="checkbox" id="filter-labels" checked /> <span class="swatch">🔤</span> Show name labels</label>
+      </section>
+
+      <div class="legend-actions">
+        <button id="reset-filters" type="button">Reset filters</button>
+        <span id="count" class="count" aria-live="polite"></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Detail panel -->
+  <aside id="detail" class="panel detail" aria-live="polite" hidden>
+    <button id="detail-close" class="detail-close" aria-label="Close details">×</button>
+    <div id="detail-body"></div>
+  </aside>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
