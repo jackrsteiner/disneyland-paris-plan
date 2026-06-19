@@ -1,0 +1,814 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "description": "Disneyland Paris locations for the heat & queue planning map.",
+    "lastUpdated": "2026-06-19",
+    "accuracy": "Best-effort. Coordinates are approximate (placed by land/layout); Premier Access, A/C status and rider heights are curated from public 2026 info and should be verified. Edit this one file to correct anything.",
+    "notes": "Walt Disney Studios Park was reimagined as 'Disney Adventure World' on 29 March 2026; World of Frozen / Frozen Ever After opened the same day."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7723, 48.8729] },
+      "properties": {
+        "id": "big-thunder-mountain",
+        "name": "Big Thunder Mountain",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": 102,
+        "heatNote": "Sun-baked outdoor queue on the island. Use Premier Access or save for the cooler evening."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7733, 48.8736] },
+      "properties": {
+        "id": "phantom-manor",
+        "name": "Phantom Manor",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Mostly indoor and shaded queue; good midday heat break. Slow boats/cars in the cool dark."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7739, 48.8719] },
+      "properties": {
+        "id": "pirates-of-the-caribbean",
+        "name": "Pirates of the Caribbean",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Excellent cooling refuge — cool stone interior queue and a long indoor boat ride. No Premier Access, but the indoor queue itself is pleasant in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7735, 48.8710] },
+      "properties": {
+        "id": "indiana-jones-temple-of-peril",
+        "name": "Indiana Jones et le Temple du Péril",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": 140,
+        "heatNote": "Outdoor jungle queue and outdoor coaster. Use Premier Access; tall riders only (140 cm)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7745, 48.8716] },
+      "properties": {
+        "id": "adventure-isle",
+        "name": "Adventure Isle & Swiss Family Treehouse",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Outdoor walkthrough with lots of climbing and stairs — tough on a knee and in full sun. Skip at midday."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7758, 48.8740] },
+      "properties": {
+        "id": "its-a-small-world",
+        "name": "It's a Small World",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Indoor air-conditioned boat ride, covered queue. Ideal cooling break for a young child."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7752, 48.8729] },
+      "properties": {
+        "id": "peter-pans-flight",
+        "name": "Peter Pan's Flight",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "ac",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Indoor queue and ride — cool and shaded, but a perennial long line. Premier Access strongly recommended."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7746, 48.8733] },
+      "properties": {
+        "id": "dumbo-the-flying-elephant",
+        "name": "Dumbo the Flying Elephant",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Fully exposed outdoor queue with slow loading. Avoid in midday heat; ride early or after dusk."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7742, 48.8731] },
+      "properties": {
+        "id": "le-carrousel-de-lancelot",
+        "name": "Le Carrousel de Lancelot",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Outdoor carousel, short queue. Roof gives a little shade once aboard."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7748, 48.8736] },
+      "properties": {
+        "id": "mad-hatters-tea-cups",
+        "name": "Mad Hatter's Tea Cups",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Spinning cups under a covered canopy — shaded but not air-conditioned."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7740, 48.8739] },
+      "properties": {
+        "id": "alices-curious-labyrinth",
+        "name": "Alice's Curious Labyrinth",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Outdoor hedge maze in full sun with lots of walking. Poor choice during peak heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7736, 48.8742] },
+      "properties": {
+        "id": "le-pays-des-contes-de-fees",
+        "name": "Le Pays des Contes de Fées (Storybook Land)",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Gentle outdoor canal boat. Exposed queue but the ride itself is calm and breezy."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7768, 48.8728] },
+      "properties": {
+        "id": "mickeys-philharmagic",
+        "name": "Mickey's PhilharMagic",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Indoor seated 4D cinema — one of the best air-conditioned refuges. Frequent showings keep the queue short."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7780, 48.8721] },
+      "properties": {
+        "id": "star-wars-hyperspace-mountain",
+        "name": "Star Wars Hyperspace Mountain",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": 120,
+        "heatNote": "Indoor air-conditioned queue and ride. Cool refuge and a headliner — use Premier Access. 120 cm minimum."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7786, 48.8715] },
+      "properties": {
+        "id": "star-tours",
+        "name": "Star Tours: The Adventures Continue",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": 102,
+        "heatNote": "Fully indoor air-conditioned queue and simulator — a top midday cooling refuge. 102 cm minimum."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7778, 48.8717] },
+      "properties": {
+        "id": "buzz-lightyear-laser-blast",
+        "name": "Buzz Lightyear Laser Blast",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Indoor air-conditioned queue and shooting ride. Great cool break for all ages."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7773, 48.8719] },
+      "properties": {
+        "id": "orbitron",
+        "name": "Orbitron",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Exposed outdoor spinner. Skip in peak heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7792, 48.8713] },
+      "properties": {
+        "id": "autopia",
+        "name": "Autopia",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": 81,
+        "heatNote": "Hot petrol cars in a fully exposed queue and track — one of the worst heat options. 81 cm to ride with an adult."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7757, 48.8705] },
+      "properties": {
+        "id": "disneyland-railroad-main-street",
+        "name": "Disneyland Railroad — Main Street Station",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Covered station platform; a shaded way to circle the park and rest the legs, though trains are open-air."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7757, 48.8712] },
+      "properties": {
+        "id": "disney-stars-on-parade",
+        "name": "Disney Stars on Parade",
+        "park": "DLP",
+        "category": "show",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Daytime parade along Main Street — viewing spots are in full sun. Grab shade or skip in favour of the evening show."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7755, 48.8722] },
+      "properties": {
+        "id": "disney-dreams-castle-show",
+        "name": "Evening Castle Show (Disney Dreams / D-Light)",
+        "park": "DLP",
+        "category": "show",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "After-dark show on the castle — cooler evening timing. Stake out a spot late, not during the heat of the day."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7728, 48.8726] },
+      "properties": {
+        "id": "the-lion-king-rhythms",
+        "name": "The Lion King: Rhythms of the Pride Lands",
+        "park": "DLP",
+        "category": "show",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Indoor air-conditioned theatre show at Chaparral Theater — excellent way to sit out the midday heat. Check showtimes."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7759, 48.8709] },
+      "properties": {
+        "id": "walts-restaurant",
+        "name": "Walt's — An American Restaurant",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Air-conditioned table service on Main Street. Book ahead; a comfortable midday escape."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7751, 48.8714] },
+      "properties": {
+        "id": "plaza-gardens-restaurant",
+        "name": "Plaza Gardens Restaurant",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Air-conditioned buffet near the castle. Good for an early lunch (≈11:15) before the rush and the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7760, 48.8711] },
+      "properties": {
+        "id": "caseys-corner",
+        "name": "Casey's Corner",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Counter-service hot dogs on Main Street. Indoor seating is shaded but only lightly cooled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7728, 48.8722] },
+      "properties": {
+        "id": "cowboy-cookout-barbecue",
+        "name": "Cowboy Cookout Barbecue",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Counter-service barbecue in a covered barn — shaded but not strongly air-conditioned."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7740, 48.8719] },
+      "properties": {
+        "id": "blue-lagoon-restaurant",
+        "name": "Blue Lagoon Restaurant",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Table service inside Pirates of the Caribbean — dark, cool and air-conditioned. One of the best midday refuges. Book ahead."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7749, 48.8734] },
+      "properties": {
+        "id": "au-chalet-de-la-marionnette",
+        "name": "Au Chalet de la Marionnette",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Large air-conditioned counter-service in Fantasyland — handy cool lunch spot for families."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7775, 48.8722] },
+      "properties": {
+        "id": "cafe-hyperion",
+        "name": "Café Hyperion",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Huge air-conditioned counter-service hall in Discoveryland — lots of cool indoor seating to escape the midday sun."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7758, 48.8708] },
+      "properties": {
+        "id": "emporium",
+        "name": "Emporium",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Large air-conditioned Main Street store — a long cool browse, and you can walk much of Main Street indoors through connected shops."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7730, 48.8727] },
+      "properties": {
+        "id": "thunder-mesa-mercantile",
+        "name": "Thunder Mesa Mercantile Building",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Air-conditioned Frontierland store — a cool stop between Big Thunder and Phantom Manor."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7753, 48.8717] },
+      "properties": {
+        "id": "meet-mickey-mouse",
+        "name": "Meet Mickey Mouse",
+        "park": "DLP",
+        "category": "character",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Indoor air-conditioned character meet (Cottonwood Creek/Fantasyland) — queue is cool, unlike outdoor character lines."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7762, 48.8720] },
+      "properties": {
+        "id": "first-aid-dlp",
+        "name": "First Aid & Baby Care Center",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Air-conditioned first aid and baby-care rooms near Central Plaza — cool, quiet space if anyone overheats."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7754, 48.8707] },
+      "properties": {
+        "id": "water-refill-main-street",
+        "name": "Water Fountain — Main Street",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point — refill bottles often. Ask any counter-service for free tap water too."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7770, 48.8725] },
+      "properties": {
+        "id": "toilets-discoveryland",
+        "name": "Toilets — Discoveryland",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms near Café Hyperion."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7813, 48.8689] },
+      "properties": {
+        "id": "tower-of-terror",
+        "name": "The Twilight Zone Tower of Terror",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor-ac",
+        "heightMin": 102,
+        "heatNote": "Indoor air-conditioned queue and ride — cool refuge as well as a thrill. Use Premier Access. 102 cm minimum."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7820, 48.8693] },
+      "properties": {
+        "id": "crushs-coaster",
+        "name": "Crush's Coaster",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "sun",
+        "venueEnv": "indoor",
+        "heightMin": 107,
+        "heatNote": "Notoriously long, fully exposed outdoor queue — brutal in the heat. Premier Access is almost essential here. 107 cm minimum."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7805, 48.8690] },
+      "properties": {
+        "id": "ratatouille-the-adventure",
+        "name": "Ratatouille: The Adventure",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Mostly indoor, air-conditioned trackless ride with a partly covered queue — a strong cool headliner. Use Premier Access."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7822, 48.8696] },
+      "properties": {
+        "id": "cars-road-trip",
+        "name": "Cars ROAD TRIP",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Covered queue but an open-air tram ride through outdoor scenes. Pleasant in the morning or evening."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7818, 48.8698] },
+      "properties": {
+        "id": "rc-racer",
+        "name": "RC Racer",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": 120,
+        "heatNote": "Exposed outdoor queue and ride in Toy Story Playland. Use Premier Access; 120 cm minimum."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7820, 48.8700] },
+      "properties": {
+        "id": "toy-soldiers-parachute-drop",
+        "name": "Toy Soldiers Parachute Drop",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": 81,
+        "heatNote": "Fully exposed Toy Story Playland queue. Use Premier Access; 81 cm minimum."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7816, 48.8699] },
+      "properties": {
+        "id": "slinky-dog-zigzag-spin",
+        "name": "Slinky Dog Zigzag Spin",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Exposed outdoor spinner for younger kids. Best early or late, not midday."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7800, 48.8685] },
+      "properties": {
+        "id": "spider-man-web-adventure",
+        "name": "Spider-Man W.E.B. Adventure",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Indoor air-conditioned queue and interactive ride in Avengers Campus — great family cool break. Use Premier Access."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7797, 48.8682] },
+      "properties": {
+        "id": "avengers-assemble-flight-force",
+        "name": "Avengers Assemble: Flight Force",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": 120,
+        "heatNote": "Indoor air-conditioned launch coaster in Avengers Campus. Use Premier Access; 120 cm minimum."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7830, 48.8700] },
+      "properties": {
+        "id": "frozen-ever-after",
+        "name": "Frozen Ever After",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": true,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "New World of Frozen indoor air-conditioned boat ride — cool and gentle, ideal for a 3-year-old. Expect big demand; use Premier Access."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7807, 48.8687] },
+      "properties": {
+        "id": "together-pixar-musical",
+        "name": "TOGETHER: a Pixar Musical Adventure",
+        "park": "WDS",
+        "category": "show",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Indoor air-conditioned theatre musical — a comfortable, seated midday cool-down. Check showtimes."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7811, 48.8684] },
+      "properties": {
+        "id": "mickey-and-the-magician",
+        "name": "Mickey and the Magician",
+        "park": "WDS",
+        "category": "show",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Indoor air-conditioned stage show at Animagique Theater — excellent heat refuge with great air-conditioning."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7832, 48.8702] },
+      "properties": {
+        "id": "world-of-frozen-show",
+        "name": "World of Frozen Daytime Show",
+        "park": "WDS",
+        "category": "show",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Outdoor show in Arendelle — viewing is in the sun. Find shade or catch a later performance."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7806, 48.8691] },
+      "properties": {
+        "id": "bistrot-chez-remy",
+        "name": "Bistrot Chez Rémy",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Air-conditioned table service beside Ratatouille — a cool, fun lunch. Book ahead."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7799, 48.8684] },
+      "properties": {
+        "id": "pym-kitchen",
+        "name": "PYM Kitchen",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Air-conditioned buffet in Avengers Campus — plenty of cool indoor seating during the hot hours."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7802, 48.8682] },
+      "properties": {
+        "id": "stark-factory",
+        "name": "Stark Factory",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Large air-conditioned Italian counter/table service in Avengers Campus — easy cool lunch."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7834, 48.8699] },
+      "properties": {
+        "id": "world-of-frozen-shop",
+        "name": "World of Frozen Shop & Tavern",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Air-conditioned shop and tavern in Arendelle — a cool stop in the newest land."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7793, 48.8681] },
+      "properties": {
+        "id": "first-aid-wds",
+        "name": "First Aid & Baby Care Center (Disney Adventure World)",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Air-conditioned first aid and baby-care near the park entrance — cool space to recover from the heat."
+      }
+    }
+  ]
+}
