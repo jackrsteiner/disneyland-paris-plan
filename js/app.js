@@ -62,12 +62,14 @@
   // ---- Marker building -------------------------------------------------
   function buildIcon(p) {
     var cat = CATEGORY_EMOJI[p.category] || "📍";
-    var q = QUEUE[p.queueEnv] || { emoji: "" };
+    var q = QUEUE[p.queueEnv] || { emoji: "", label: "" };
+    var v = VENUE[p.venueEnv] || { emoji: "", label: "" };
     var paBadge = p.premierAccess ? '<span class="badge pa" title="Premier Access">⚡</span>' : "";
     var html =
       '<div class="pin">' +
       cat +
-      '<span class="badge queue" title="' + (QUEUE[p.queueEnv] ? QUEUE[p.queueEnv].label : "") + '">' + q.emoji + "</span>" +
+      '<span class="badge queue" title="' + q.label + '">' + q.emoji + "</span>" +
+      '<span class="badge venue" title="' + v.label + '">' + v.emoji + "</span>" +
       paBadge +
       "</div>";
     return L.divIcon({
