@@ -66,9 +66,11 @@ All locations live in **[`data/locations.json`](./data/locations.json)** (GeoJSO
 correct anything, edit that one file — no code changes needed. The fields are documented in
 **[`data/schema.md`](./data/schema.md)**.
 
-> **Accuracy note:** coordinates are approximate (placed by park layout) and the Premier Access /
-> A/C / height values are curated from public 2026 information. Treat them as a best-effort
-> starting point and correct anything you spot — it is a one-line edit.
+> **Accuracy note:** coordinates are sourced from OpenStreetMap (Overpass API, June 2026) and sit
+> on each attraction's real footprint; only the brand-new World of Frozen rides (untagged in OSM)
+> are approximate, anchored within the correct land. The Premier Access / A/C / height values are
+> curated from public 2026 information — treat those as a best-effort starting point and correct
+> anything you spot (it is a one-line edit).
 
 ## Project structure
 

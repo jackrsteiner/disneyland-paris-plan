@@ -2,14 +2,14 @@
   "type": "FeatureCollection",
   "metadata": {
     "description": "Disneyland Paris locations for the heat & queue planning map.",
-    "lastUpdated": "2026-06-19",
-    "accuracy": "Best-effort. Coordinates are approximate (placed by land/layout); Premier Access, A/C status and rider heights are curated from public 2026 info and should be verified. Edit this one file to correct anything.",
+    "lastUpdated": "2026-06-20",
+    "accuracy": "Coordinates are now sourced from OpenStreetMap (Overpass API, June 2026) and should be accurate to each attraction's footprint; the brand-new World of Frozen rides (Frozen Ever After and its show/shop), not yet mapped in OSM, are placed within the correct land by anchoring to their mapped neighbours. Premier Access, A/C status and rider heights remain curated from public 2026 info — edit this one file to correct anything.",
     "notes": "Walt Disney Studios Park was reimagined as 'Disney Adventure World' on 29 March 2026; World of Frozen / Frozen Ever After opened the same day."
   },
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7723, 48.8729] },
+      "geometry": { "type": "Point", "coordinates": [2.77452, 48.87127] },
       "properties": {
         "id": "big-thunder-mountain",
         "name": "Big Thunder Mountain",
@@ -24,7 +24,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7733, 48.8736] },
+      "geometry": { "type": "Point", "coordinates": [2.77723, 48.87034] },
       "properties": {
         "id": "phantom-manor",
         "name": "Phantom Manor",
@@ -39,7 +39,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7739, 48.8719] },
+      "geometry": { "type": "Point", "coordinates": [2.77252, 48.87384] },
       "properties": {
         "id": "pirates-of-the-caribbean",
         "name": "Pirates of the Caribbean",
@@ -54,7 +54,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7735, 48.8710] },
+      "geometry": { "type": "Point", "coordinates": [2.77185, 48.87208] },
       "properties": {
         "id": "indiana-jones-temple-of-peril",
         "name": "Indiana Jones et le Temple du Péril",
@@ -69,7 +69,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7745, 48.8716] },
+      "geometry": { "type": "Point", "coordinates": [2.77332, 48.87259] },
       "properties": {
         "id": "adventure-isle",
         "name": "Adventure Isle & Swiss Family Treehouse",
@@ -84,7 +84,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7758, 48.8740] },
+      "geometry": { "type": "Point", "coordinates": [2.77607, 48.87485] },
       "properties": {
         "id": "its-a-small-world",
         "name": "It's a Small World",
@@ -99,7 +99,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7752, 48.8729] },
+      "geometry": { "type": "Point", "coordinates": [2.77375, 48.87376] },
       "properties": {
         "id": "peter-pans-flight",
         "name": "Peter Pan's Flight",
@@ -114,7 +114,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7746, 48.8733] },
+      "geometry": { "type": "Point", "coordinates": [2.77458, 48.87399] },
       "properties": {
         "id": "dumbo-the-flying-elephant",
         "name": "Dumbo the Flying Elephant",
@@ -129,7 +129,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7742, 48.8731] },
+      "geometry": { "type": "Point", "coordinates": [2.77537, 48.87374] },
       "properties": {
         "id": "le-carrousel-de-lancelot",
         "name": "Le Carrousel de Lancelot",
@@ -144,7 +144,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7748, 48.8736] },
+      "geometry": { "type": "Point", "coordinates": [2.77516, 48.8744] },
       "properties": {
         "id": "mad-hatters-tea-cups",
         "name": "Mad Hatter's Tea Cups",
@@ -159,7 +159,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7740, 48.8739] },
+      "geometry": { "type": "Point", "coordinates": [2.77449, 48.87449] },
       "properties": {
         "id": "alices-curious-labyrinth",
         "name": "Alice's Curious Labyrinth",
@@ -174,7 +174,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7736, 48.8742] },
+      "geometry": { "type": "Point", "coordinates": [2.77469, 48.87534] },
       "properties": {
         "id": "le-pays-des-contes-de-fees",
         "name": "Le Pays des Contes de Fées (Storybook Land)",
@@ -189,7 +189,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7768, 48.8728] },
+      "geometry": { "type": "Point", "coordinates": [2.77985, 48.87449] },
       "properties": {
         "id": "mickeys-philharmagic",
         "name": "Mickey's PhilharMagic",
@@ -204,10 +204,10 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7780, 48.8721] },
+      "geometry": { "type": "Point", "coordinates": [2.77929, 48.87407] },
       "properties": {
         "id": "star-wars-hyperspace-mountain",
-        "name": "Star Wars Hyperspace Mountain",
+        "name": "Star Wars Hyperspace Mountain (Space Mountain)",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": true,
@@ -219,7 +219,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7786, 48.8715] },
+      "geometry": { "type": "Point", "coordinates": [2.77905, 48.87491] },
       "properties": {
         "id": "star-tours",
         "name": "Star Tours: The Adventures Continue",
@@ -234,7 +234,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7778, 48.8717] },
+      "geometry": { "type": "Point", "coordinates": [2.77747, 48.87361] },
       "properties": {
         "id": "buzz-lightyear-laser-blast",
         "name": "Buzz Lightyear Laser Blast",
@@ -249,7 +249,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7773, 48.8719] },
+      "geometry": { "type": "Point", "coordinates": [2.77838, 48.87356] },
       "properties": {
         "id": "orbitron",
         "name": "Orbitron",
@@ -264,7 +264,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7792, 48.8713] },
+      "geometry": { "type": "Point", "coordinates": [2.77893, 48.87323] },
       "properties": {
         "id": "autopia",
         "name": "Autopia",
@@ -279,7 +279,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7757, 48.8705] },
+      "geometry": { "type": "Point", "coordinates": [2.77912, 48.8708] },
       "properties": {
         "id": "disneyland-railroad-main-street",
         "name": "Disneyland Railroad — Main Street Station",
@@ -292,10 +292,9 @@
         "heatNote": "Covered station platform; a shaded way to circle the park and rest the legs, though trains are open-air."
       }
     },
-
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7757, 48.8712] },
+      "geometry": { "type": "Point", "coordinates": [2.77884, 48.87107] },
       "properties": {
         "id": "disney-stars-on-parade",
         "name": "Disney Stars on Parade",
@@ -310,7 +309,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7755, 48.8722] },
+      "geometry": { "type": "Point", "coordinates": [2.77601, 48.87318] },
       "properties": {
         "id": "disney-dreams-castle-show",
         "name": "Evening Castle Show (Disney Dreams / D-Light)",
@@ -325,7 +324,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7728, 48.8726] },
+      "geometry": { "type": "Point", "coordinates": [2.77279, 48.87001] },
       "properties": {
         "id": "the-lion-king-rhythms",
         "name": "The Lion King: Rhythms of the Pride Lands",
@@ -338,10 +337,9 @@
         "heatNote": "Indoor air-conditioned theatre show at Chaparral Theater — excellent way to sit out the midday heat. Check showtimes."
       }
     },
-
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7759, 48.8709] },
+      "geometry": { "type": "Point", "coordinates": [2.77774, 48.87168] },
       "properties": {
         "id": "walts-restaurant",
         "name": "Walt's — An American Restaurant",
@@ -356,7 +354,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7751, 48.8714] },
+      "geometry": { "type": "Point", "coordinates": [2.77812, 48.8726] },
       "properties": {
         "id": "plaza-gardens-restaurant",
         "name": "Plaza Gardens Restaurant",
@@ -371,7 +369,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7760, 48.8711] },
+      "geometry": { "type": "Point", "coordinates": [2.77734, 48.87188] },
       "properties": {
         "id": "caseys-corner",
         "name": "Casey's Corner",
@@ -386,7 +384,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7728, 48.8722] },
+      "geometry": { "type": "Point", "coordinates": [2.77301, 48.87097] },
       "properties": {
         "id": "cowboy-cookout-barbecue",
         "name": "Cowboy Cookout Barbecue",
@@ -401,7 +399,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7740, 48.8719] },
+      "geometry": { "type": "Point", "coordinates": [2.77269, 48.87338] },
       "properties": {
         "id": "blue-lagoon-restaurant",
         "name": "Blue Lagoon Restaurant",
@@ -416,7 +414,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7749, 48.8734] },
+      "geometry": { "type": "Point", "coordinates": [2.77464, 48.87332] },
       "properties": {
         "id": "au-chalet-de-la-marionnette",
         "name": "Au Chalet de la Marionnette",
@@ -431,7 +429,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7775, 48.8722] },
+      "geometry": { "type": "Point", "coordinates": [2.77783, 48.87412] },
       "properties": {
         "id": "cafe-hyperion",
         "name": "Café Hyperion",
@@ -444,10 +442,9 @@
         "heatNote": "Huge air-conditioned counter-service hall in Discoveryland — lots of cool indoor seating to escape the midday sun."
       }
     },
-
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7758, 48.8708] },
+      "geometry": { "type": "Point", "coordinates": [2.77806, 48.87136] },
       "properties": {
         "id": "emporium",
         "name": "Emporium",
@@ -462,7 +459,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7730, 48.8727] },
+      "geometry": { "type": "Point", "coordinates": [2.77585, 48.87181] },
       "properties": {
         "id": "thunder-mesa-mercantile",
         "name": "Thunder Mesa Mercantile Building",
@@ -475,10 +472,9 @@
         "heatNote": "Air-conditioned Frontierland store — a cool stop between Big Thunder and Phantom Manor."
       }
     },
-
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7753, 48.8717] },
+      "geometry": { "type": "Point", "coordinates": [2.77377, 48.87446] },
       "properties": {
         "id": "meet-mickey-mouse",
         "name": "Meet Mickey Mouse",
@@ -493,7 +489,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7762, 48.8720] },
+      "geometry": { "type": "Point", "coordinates": [2.77835, 48.87245] },
       "properties": {
         "id": "first-aid-dlp",
         "name": "First Aid & Baby Care Center",
@@ -508,7 +504,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7754, 48.8707] },
+      "geometry": { "type": "Point", "coordinates": [2.7786, 48.8711] },
       "properties": {
         "id": "water-refill-main-street",
         "name": "Water Fountain — Main Street",
@@ -523,7 +519,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7770, 48.8725] },
+      "geometry": { "type": "Point", "coordinates": [2.7779, 48.87405] },
       "properties": {
         "id": "toilets-discoveryland",
         "name": "Toilets — Discoveryland",
@@ -536,10 +532,219 @@
         "heatNote": "Restrooms near Café Hyperion."
       }
     },
-
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7813, 48.8689] },
+      "geometry": { "type": "Point", "coordinates": [2.77531, 48.87329] },
+      "properties": {
+        "id": "blanche-neige-sept-nains",
+        "name": "Blanche-Neige et les Sept Nains (Snow White)",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Indoor Fantasyland dark ride with a covered queue — a quick, cool shaded break for little ones."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77502, 48.87337] },
+      "properties": {
+        "id": "les-voyages-de-pinocchio",
+        "name": "Les Voyages de Pinocchio",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Indoor dark ride next to Snow White; covered queue and a cool, gentle ride."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77418, 48.87539] },
+      "properties": {
+        "id": "casey-jr",
+        "name": "Casey Jr. – le Petit Train du Cirque",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Outdoor kiddie coaster around Storybook Land. Exposed queue — ride early or in the cooler evening."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7796, 48.87346] },
+      "properties": {
+        "id": "les-mysteres-du-nautilus",
+        "name": "Les Mystères du Nautilus",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Walk-through of Captain Nemo's submarine — indoor, dark and cool with no real queue. A handy Discoveryland heat refuge."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77577, 48.87305] },
+      "properties": {
+        "id": "la-taniere-du-dragon",
+        "name": "La Tanière du Dragon",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "The dragon's cave beneath the castle — a short, dark, cool walk-through. Stairs at the entrance/exit. Good quick escape from the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77548, 48.87486] },
+      "properties": {
+        "id": "princess-pavilion",
+        "name": "Princess Pavilion",
+        "park": "DLP",
+        "category": "character",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Indoor air-conditioned princess meet. Queue can be long; the meeting room itself is a cool refuge — go early or use a return time if offered."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7755, 48.87245] },
+      "properties": {
+        "id": "passage-enchante-aladdin",
+        "name": "Le Passage Enchanté d'Aladdin",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Indoor Aladdin story walk-through in Adventureland — shaded, brief and crowd-free; a small heat break with no height limit."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77642, 48.87113] },
+      "properties": {
+        "id": "thunder-mesa-riverboat",
+        "name": "Thunder Mesa Riverboat Landing",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Paddle-steamer cruise around Big Thunder. Exposed open-air deck and queue, but a breezy way to rest the legs."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77553, 48.8715] },
+      "properties": {
+        "id": "rustler-roundup-shootin-gallery",
+        "name": "Rustler Roundup Shootin' Gallery",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Outdoor coin-op shooting gallery in Frontierland (small extra fee). Fully exposed — quick stop only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77846, 48.87091] },
+      "properties": {
+        "id": "main-street-vehicles",
+        "name": "Main Street Vehicles",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Vintage cars and horse-drawn streetcars up Main Street. Open-air and weather-dependent — a leg-saver, not a heat escape."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77214, 48.87019] },
+      "properties": {
+        "id": "railroad-frontierland",
+        "name": "Disneyland Railroad — Frontierland Depot",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Covered station platform in Frontierland; a shaded place to board the train and circle the park while resting."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77357, 48.87462] },
+      "properties": {
+        "id": "railroad-fantasyland",
+        "name": "Disneyland Railroad — Fantasyland Station",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Covered Fantasyland station platform; shaded boarding point for a restful loop of the park."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77941, 48.87472] },
+      "properties": {
+        "id": "railroad-discoveryland",
+        "name": "Disneyland Railroad — Discoveryland Station",
+        "park": "DLP",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Covered Discoveryland station platform; shaded boarding point and a way to skip a hot walk back to Main Street."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77809, 48.87425] },
+      "properties": {
+        "id": "videopolis-theatre",
+        "name": "Videopolis Théâtre",
+        "park": "DLP",
+        "category": "show",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "heatNote": "Large air-conditioned Discoveryland theatre (currently The Jungle Book show). One of the best seated midday cool-downs — check showtimes."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77864, 48.86643] },
       "properties": {
         "id": "tower-of-terror",
         "name": "The Twilight Zone Tower of Terror",
@@ -554,7 +759,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7820, 48.8693] },
+      "geometry": { "type": "Point", "coordinates": [2.77789, 48.86811] },
       "properties": {
         "id": "crushs-coaster",
         "name": "Crush's Coaster",
@@ -569,7 +774,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7805, 48.8690] },
+      "geometry": { "type": "Point", "coordinates": [2.77571, 48.86796] },
       "properties": {
         "id": "ratatouille-the-adventure",
         "name": "Ratatouille: The Adventure",
@@ -584,7 +789,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7822, 48.8696] },
+      "geometry": { "type": "Point", "coordinates": [2.77479, 48.86647] },
       "properties": {
         "id": "cars-road-trip",
         "name": "Cars ROAD TRIP",
@@ -599,7 +804,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7818, 48.8698] },
+      "geometry": { "type": "Point", "coordinates": [2.77642, 48.86683] },
       "properties": {
         "id": "rc-racer",
         "name": "RC Racer",
@@ -614,7 +819,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7820, 48.8700] },
+      "geometry": { "type": "Point", "coordinates": [2.77742, 48.86712] },
       "properties": {
         "id": "toy-soldiers-parachute-drop",
         "name": "Toy Soldiers Parachute Drop",
@@ -629,7 +834,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7816, 48.8699] },
+      "geometry": { "type": "Point", "coordinates": [2.77675, 48.86711] },
       "properties": {
         "id": "slinky-dog-zigzag-spin",
         "name": "Slinky Dog Zigzag Spin",
@@ -644,7 +849,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7800, 48.8685] },
+      "geometry": { "type": "Point", "coordinates": [2.77909, 48.86595] },
       "properties": {
         "id": "spider-man-web-adventure",
         "name": "Spider-Man W.E.B. Adventure",
@@ -659,7 +864,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7797, 48.8682] },
+      "geometry": { "type": "Point", "coordinates": [2.77995, 48.86451] },
       "properties": {
         "id": "avengers-assemble-flight-force",
         "name": "Avengers Assemble: Flight Force",
@@ -674,7 +879,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7830, 48.8700] },
+      "geometry": { "type": "Point", "coordinates": [2.7748, 48.8652] },
       "properties": {
         "id": "frozen-ever-after",
         "name": "Frozen Ever After",
@@ -687,10 +892,9 @@
         "heatNote": "New World of Frozen indoor air-conditioned boat ride — cool and gentle, ideal for a 3-year-old. Expect big demand; use Premier Access."
       }
     },
-
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7807, 48.8687] },
+      "geometry": { "type": "Point", "coordinates": [2.78021, 48.86728] },
       "properties": {
         "id": "together-pixar-musical",
         "name": "TOGETHER: a Pixar Musical Adventure",
@@ -705,7 +909,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7811, 48.8684] },
+      "geometry": { "type": "Point", "coordinates": [2.77916, 48.86816] },
       "properties": {
         "id": "mickey-and-the-magician",
         "name": "Mickey and the Magician",
@@ -720,7 +924,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7832, 48.8702] },
+      "geometry": { "type": "Point", "coordinates": [2.7752, 48.8658] },
       "properties": {
         "id": "world-of-frozen-show",
         "name": "World of Frozen Daytime Show",
@@ -733,10 +937,9 @@
         "heatNote": "Outdoor show in Arendelle — viewing is in the sun. Find shade or catch a later performance."
       }
     },
-
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7806, 48.8691] },
+      "geometry": { "type": "Point", "coordinates": [2.77594, 48.86751] },
       "properties": {
         "id": "bistrot-chez-remy",
         "name": "Bistrot Chez Rémy",
@@ -751,7 +954,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7799, 48.8684] },
+      "geometry": { "type": "Point", "coordinates": [2.78005, 48.86598] },
       "properties": {
         "id": "pym-kitchen",
         "name": "PYM Kitchen",
@@ -766,7 +969,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7802, 48.8682] },
+      "geometry": { "type": "Point", "coordinates": [2.78005, 48.86569] },
       "properties": {
         "id": "stark-factory",
         "name": "Stark Factory",
@@ -779,10 +982,9 @@
         "heatNote": "Large air-conditioned Italian counter/table service in Avengers Campus — easy cool lunch."
       }
     },
-
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7834, 48.8699] },
+      "geometry": { "type": "Point", "coordinates": [2.7755, 48.866] },
       "properties": {
         "id": "world-of-frozen-shop",
         "name": "World of Frozen Shop & Tavern",
@@ -797,7 +999,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.7793, 48.8681] },
+      "geometry": { "type": "Point", "coordinates": [2.7804, 48.868] },
       "properties": {
         "id": "first-aid-wds",
         "name": "First Aid & Baby Care Center (Disney Adventure World)",
@@ -808,6 +1010,51 @@
         "venueEnv": "indoor-ac",
         "heightMin": null,
         "heatNote": "Air-conditioned first aid and baby-care near the park entrance — cool space to recover from the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77804, 48.86769] },
+      "properties": {
+        "id": "cars-quatre-roues-rallye",
+        "name": "Cars Quatre Roues Rallye",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Outdoor Cars-themed spinner. Exposed queue and ride — best in the morning or evening, not at midday."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77644, 48.86626] },
+      "properties": {
+        "id": "raiponce-tangled-spin",
+        "name": "Raiponce Tangled Spin",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "New Tangled-themed outdoor spinner on the edge of World of Frozen. Exposed — ride outside the peak heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77836, 48.86828] },
+      "properties": {
+        "id": "flying-carpets-aladdin",
+        "name": "Les Tapis Volants – Flying Carpets Over Agrabah",
+        "park": "WDS",
+        "category": "attraction",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Aladdin magic-carpet spinner. Fully exposed queue and ride; one for the cooler parts of the day."
       }
     }
   ]

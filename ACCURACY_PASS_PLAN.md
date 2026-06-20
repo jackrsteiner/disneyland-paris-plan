@@ -1,8 +1,10 @@
 # Plan: Fix marker positions & add missing attractions (full accuracy pass)
 
-> **Status:** Not started — **blocked on a network-allowlist change** (see Prerequisite).
-> Saved so it can be resumed in a fresh Claude Code on the web session.
-> Branch: `claude/disneyland-paris-map-wsgmoa` (open PR #2).
+> **Status:** ✅ **Done** (2026-06-20, branch `claude/poi-locations-missing-points-g2v5nf`).
+> OpenStreetMap hosts were allowlisted; coordinates for all existing markers were rebuilt from
+> the Overpass API and 17 missing attractions/shows were added. The notes below are kept as a
+> record of the approach. Brand-new World of Frozen rides (Frozen Ever After + its show/shop) are
+> still untagged in OSM and were anchored within the correct land via their mapped neighbours.
 
 ## Context
 
