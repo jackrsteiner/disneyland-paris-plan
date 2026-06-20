@@ -34,12 +34,13 @@
 
       <section class="filter-group" data-group="category">
         <h3>Categories</h3>
-        <label><input type="checkbox" data-filter="category" value="attraction" checked /> <span class="swatch">🎢</span> Attractions / rides</label>
-        <label><input type="checkbox" data-filter="category" value="show" checked /> <span class="swatch">🎭</span> Shows &amp; entertainment</label>
-        <label><input type="checkbox" data-filter="category" value="restaurant" checked /> <span class="swatch">🍴</span> Restaurants &amp; dining</label>
-        <label><input type="checkbox" data-filter="category" value="shop" checked /> <span class="swatch">🛍️</span> Shops</label>
-        <label><input type="checkbox" data-filter="category" value="character" checked /> <span class="swatch">🐭</span> Character meets</label>
-        <label><input type="checkbox" data-filter="category" value="amenity" checked /> <span class="swatch">🚻</span> Amenities (toilets / water / first aid)</label>
+        <p class="hint sub-hint">Tick to toggle a category; click its <em>name</em> to show only that one.</p>
+        <label><input type="checkbox" data-filter="category" value="attraction" checked /> <span class="swatch">🎢</span> <button type="button" class="cat-name" data-isolate="category" data-value="attraction" title="Show only this category">Attractions / rides</button></label>
+        <label><input type="checkbox" data-filter="category" value="show" checked /> <span class="swatch">🎭</span> <button type="button" class="cat-name" data-isolate="category" data-value="show" title="Show only this category">Shows &amp; entertainment</button></label>
+        <label><input type="checkbox" data-filter="category" value="restaurant" checked /> <span class="swatch">🍴</span> <button type="button" class="cat-name" data-isolate="category" data-value="restaurant" title="Show only this category">Restaurants &amp; dining</button></label>
+        <label><input type="checkbox" data-filter="category" value="shop" checked /> <span class="swatch">🛍️</span> <button type="button" class="cat-name" data-isolate="category" data-value="shop" title="Show only this category">Shops</button></label>
+        <label><input type="checkbox" data-filter="category" value="character" checked /> <span class="swatch">🐭</span> <button type="button" class="cat-name" data-isolate="category" data-value="character" title="Show only this category">Character meets</button></label>
+        <label><input type="checkbox" data-filter="category" value="amenity" checked /> <span class="swatch">🚻</span> <button type="button" class="cat-name" data-isolate="category" data-value="amenity" title="Show only this category">Amenities (toilets / water / first aid)</button></label>
       </section>
 
       <section class="filter-group" data-group="queueEnv">
