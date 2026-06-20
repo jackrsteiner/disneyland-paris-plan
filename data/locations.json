@@ -13,6 +13,7 @@
       "properties": {
         "id": "big-thunder-mountain",
         "name": "Big Thunder Mountain",
+        "shortName": "Big Thunder",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": true,
@@ -43,6 +44,7 @@
       "properties": {
         "id": "pirates-of-the-caribbean",
         "name": "Pirates of the Caribbean",
+        "shortName": "Pirates",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -58,6 +60,7 @@
       "properties": {
         "id": "indiana-jones-temple-of-peril",
         "name": "Indiana Jones et le Temple du Péril",
+        "shortName": "Indiana Jones",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": true,
@@ -88,6 +91,7 @@
       "properties": {
         "id": "its-a-small-world",
         "name": "It's a Small World",
+        "shortName": "Small World",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": true,
@@ -103,6 +107,7 @@
       "properties": {
         "id": "peter-pans-flight",
         "name": "Peter Pan's Flight",
+        "shortName": "Peter Pan",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": true,
@@ -118,6 +123,7 @@
       "properties": {
         "id": "dumbo-the-flying-elephant",
         "name": "Dumbo the Flying Elephant",
+        "shortName": "Dumbo",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -133,6 +139,7 @@
       "properties": {
         "id": "le-carrousel-de-lancelot",
         "name": "Le Carrousel de Lancelot",
+        "shortName": "Lancelot Carousel",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -148,6 +155,7 @@
       "properties": {
         "id": "mad-hatters-tea-cups",
         "name": "Mad Hatter's Tea Cups",
+        "shortName": "Tea Cups",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -163,6 +171,7 @@
       "properties": {
         "id": "alices-curious-labyrinth",
         "name": "Alice's Curious Labyrinth",
+        "shortName": "Alice's Labyrinth",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -178,6 +187,7 @@
       "properties": {
         "id": "le-pays-des-contes-de-fees",
         "name": "Le Pays des Contes de Fées (Storybook Land)",
+        "shortName": "Storybook Land",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -193,6 +203,7 @@
       "properties": {
         "id": "mickeys-philharmagic",
         "name": "Mickey's PhilharMagic",
+        "shortName": "PhilharMagic",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -208,6 +219,7 @@
       "properties": {
         "id": "star-wars-hyperspace-mountain",
         "name": "Star Wars Hyperspace Mountain (Space Mountain)",
+        "shortName": "Hyperspace Mountain",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": true,
@@ -223,6 +235,7 @@
       "properties": {
         "id": "star-tours",
         "name": "Star Tours: The Adventures Continue",
+        "shortName": "Star Tours",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": true,
@@ -238,6 +251,7 @@
       "properties": {
         "id": "buzz-lightyear-laser-blast",
         "name": "Buzz Lightyear Laser Blast",
+        "shortName": "Buzz Lightyear",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": true,
@@ -283,6 +297,7 @@
       "properties": {
         "id": "disneyland-railroad-main-street",
         "name": "Disneyland Railroad — Main Street Station",
+        "shortName": "Railroad — Main Street",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -298,6 +313,7 @@
       "properties": {
         "id": "disney-stars-on-parade",
         "name": "Disney Stars on Parade",
+        "shortName": "Stars on Parade",
         "park": "DLP",
         "category": "show",
         "premierAccess": false,
@@ -313,6 +329,7 @@
       "properties": {
         "id": "disney-dreams-castle-show",
         "name": "Evening Castle Show (Disney Dreams / D-Light)",
+        "shortName": "Castle Show",
         "park": "DLP",
         "category": "show",
         "premierAccess": false,
@@ -328,6 +345,7 @@
       "properties": {
         "id": "the-lion-king-rhythms",
         "name": "The Lion King: Rhythms of the Pride Lands",
+        "shortName": "Lion King",
         "park": "DLP",
         "category": "show",
         "premierAccess": false,
@@ -343,6 +361,7 @@
       "properties": {
         "id": "walts-restaurant",
         "name": "Walt's — An American Restaurant",
+        "shortName": "Walt's",
         "park": "DLP",
         "category": "restaurant",
         "premierAccess": false,
@@ -358,6 +377,7 @@
       "properties": {
         "id": "plaza-gardens-restaurant",
         "name": "Plaza Gardens Restaurant",
+        "shortName": "Plaza Gardens",
         "park": "DLP",
         "category": "restaurant",
         "premierAccess": false,
@@ -388,6 +408,7 @@
       "properties": {
         "id": "cowboy-cookout-barbecue",
         "name": "Cowboy Cookout Barbecue",
+        "shortName": "Cowboy Cookout",
         "park": "DLP",
         "category": "restaurant",
         "premierAccess": false,
@@ -403,6 +424,7 @@
       "properties": {
         "id": "blue-lagoon-restaurant",
         "name": "Blue Lagoon Restaurant",
+        "shortName": "Blue Lagoon",
         "park": "DLP",
         "category": "restaurant",
         "premierAccess": false,
@@ -418,6 +440,7 @@
       "properties": {
         "id": "au-chalet-de-la-marionnette",
         "name": "Au Chalet de la Marionnette",
+        "shortName": "Au Chalet",
         "park": "DLP",
         "category": "restaurant",
         "premierAccess": false,
@@ -463,6 +486,7 @@
       "properties": {
         "id": "thunder-mesa-mercantile",
         "name": "Thunder Mesa Mercantile Building",
+        "shortName": "Thunder Mesa Store",
         "park": "DLP",
         "category": "shop",
         "premierAccess": false,
@@ -478,6 +502,7 @@
       "properties": {
         "id": "meet-mickey-mouse",
         "name": "Meet Mickey Mouse",
+        "shortName": "Meet Mickey",
         "park": "DLP",
         "category": "character",
         "premierAccess": false,
@@ -493,6 +518,7 @@
       "properties": {
         "id": "first-aid-dlp",
         "name": "First Aid & Baby Care Center",
+        "shortName": "First Aid",
         "park": "DLP",
         "category": "amenity",
         "premierAccess": false,
@@ -508,6 +534,7 @@
       "properties": {
         "id": "water-refill-main-street",
         "name": "Water Fountain — Main Street",
+        "shortName": "Water Fountain",
         "park": "DLP",
         "category": "amenity",
         "premierAccess": false,
@@ -523,6 +550,7 @@
       "properties": {
         "id": "toilets-discoveryland",
         "name": "Toilets — Discoveryland",
+        "shortName": "Toilets",
         "park": "DLP",
         "category": "amenity",
         "premierAccess": false,
@@ -538,6 +566,7 @@
       "properties": {
         "id": "blanche-neige-sept-nains",
         "name": "Blanche-Neige et les Sept Nains (Snow White)",
+        "shortName": "Snow White",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -553,6 +582,7 @@
       "properties": {
         "id": "les-voyages-de-pinocchio",
         "name": "Les Voyages de Pinocchio",
+        "shortName": "Pinocchio",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -568,6 +598,7 @@
       "properties": {
         "id": "casey-jr",
         "name": "Casey Jr. – le Petit Train du Cirque",
+        "shortName": "Casey Jr.",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -583,6 +614,7 @@
       "properties": {
         "id": "les-mysteres-du-nautilus",
         "name": "Les Mystères du Nautilus",
+        "shortName": "Nautilus",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -598,6 +630,7 @@
       "properties": {
         "id": "la-taniere-du-dragon",
         "name": "La Tanière du Dragon",
+        "shortName": "Dragon's Lair",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -628,6 +661,7 @@
       "properties": {
         "id": "passage-enchante-aladdin",
         "name": "Le Passage Enchanté d'Aladdin",
+        "shortName": "Aladdin's Passage",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -643,6 +677,7 @@
       "properties": {
         "id": "thunder-mesa-riverboat",
         "name": "Thunder Mesa Riverboat Landing",
+        "shortName": "Riverboat",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -658,6 +693,7 @@
       "properties": {
         "id": "rustler-roundup-shootin-gallery",
         "name": "Rustler Roundup Shootin' Gallery",
+        "shortName": "Shootin' Gallery",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -673,6 +709,7 @@
       "properties": {
         "id": "main-street-vehicles",
         "name": "Main Street Vehicles",
+        "shortName": "Main St. Vehicles",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -688,6 +725,7 @@
       "properties": {
         "id": "railroad-frontierland",
         "name": "Disneyland Railroad — Frontierland Depot",
+        "shortName": "Railroad — Frontierland",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -703,6 +741,7 @@
       "properties": {
         "id": "railroad-fantasyland",
         "name": "Disneyland Railroad — Fantasyland Station",
+        "shortName": "Railroad — Fantasyland",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -718,6 +757,7 @@
       "properties": {
         "id": "railroad-discoveryland",
         "name": "Disneyland Railroad — Discoveryland Station",
+        "shortName": "Railroad — Discoveryland",
         "park": "DLP",
         "category": "attraction",
         "premierAccess": false,
@@ -733,6 +773,7 @@
       "properties": {
         "id": "videopolis-theatre",
         "name": "Videopolis Théâtre",
+        "shortName": "Videopolis",
         "park": "DLP",
         "category": "show",
         "premierAccess": false,
@@ -748,6 +789,7 @@
       "properties": {
         "id": "tower-of-terror",
         "name": "The Twilight Zone Tower of Terror",
+        "shortName": "Tower of Terror",
         "park": "WDS",
         "category": "attraction",
         "premierAccess": true,
@@ -778,6 +820,7 @@
       "properties": {
         "id": "ratatouille-the-adventure",
         "name": "Ratatouille: The Adventure",
+        "shortName": "Ratatouille",
         "park": "WDS",
         "category": "attraction",
         "premierAccess": true,
@@ -823,6 +866,7 @@
       "properties": {
         "id": "toy-soldiers-parachute-drop",
         "name": "Toy Soldiers Parachute Drop",
+        "shortName": "Parachute Drop",
         "park": "WDS",
         "category": "attraction",
         "premierAccess": true,
@@ -838,6 +882,7 @@
       "properties": {
         "id": "slinky-dog-zigzag-spin",
         "name": "Slinky Dog Zigzag Spin",
+        "shortName": "Slinky Dog",
         "park": "WDS",
         "category": "attraction",
         "premierAccess": false,
@@ -853,6 +898,7 @@
       "properties": {
         "id": "spider-man-web-adventure",
         "name": "Spider-Man W.E.B. Adventure",
+        "shortName": "Spider-Man",
         "park": "WDS",
         "category": "attraction",
         "premierAccess": true,
@@ -868,6 +914,7 @@
       "properties": {
         "id": "avengers-assemble-flight-force",
         "name": "Avengers Assemble: Flight Force",
+        "shortName": "Flight Force",
         "park": "WDS",
         "category": "attraction",
         "premierAccess": true,
@@ -898,6 +945,7 @@
       "properties": {
         "id": "together-pixar-musical",
         "name": "TOGETHER: a Pixar Musical Adventure",
+        "shortName": "TOGETHER",
         "park": "WDS",
         "category": "show",
         "premierAccess": false,
@@ -913,6 +961,7 @@
       "properties": {
         "id": "mickey-and-the-magician",
         "name": "Mickey and the Magician",
+        "shortName": "Mickey & the Magician",
         "park": "WDS",
         "category": "show",
         "premierAccess": false,
@@ -928,6 +977,7 @@
       "properties": {
         "id": "world-of-frozen-show",
         "name": "World of Frozen Daytime Show",
+        "shortName": "Frozen Show",
         "park": "WDS",
         "category": "show",
         "premierAccess": false,
@@ -943,6 +993,7 @@
       "properties": {
         "id": "bistrot-chez-remy",
         "name": "Bistrot Chez Rémy",
+        "shortName": "Chez Rémy",
         "park": "WDS",
         "category": "restaurant",
         "premierAccess": false,
@@ -988,6 +1039,7 @@
       "properties": {
         "id": "world-of-frozen-shop",
         "name": "World of Frozen Shop & Tavern",
+        "shortName": "Frozen Shop",
         "park": "WDS",
         "category": "shop",
         "premierAccess": false,
@@ -1003,6 +1055,7 @@
       "properties": {
         "id": "first-aid-wds",
         "name": "First Aid & Baby Care Center (Disney Adventure World)",
+        "shortName": "First Aid",
         "park": "WDS",
         "category": "amenity",
         "premierAccess": false,
@@ -1018,6 +1071,7 @@
       "properties": {
         "id": "cars-quatre-roues-rallye",
         "name": "Cars Quatre Roues Rallye",
+        "shortName": "Cars Rallye",
         "park": "WDS",
         "category": "attraction",
         "premierAccess": false,
@@ -1033,6 +1087,7 @@
       "properties": {
         "id": "raiponce-tangled-spin",
         "name": "Raiponce Tangled Spin",
+        "shortName": "Tangled Spin",
         "park": "WDS",
         "category": "attraction",
         "premierAccess": false,
@@ -1048,6 +1103,7 @@
       "properties": {
         "id": "flying-carpets-aladdin",
         "name": "Les Tapis Volants – Flying Carpets Over Agrabah",
+        "shortName": "Flying Carpets",
         "park": "WDS",
         "category": "attraction",
         "premierAccess": false,

@@ -166,7 +166,7 @@
         var latlng = [c[1], c[0]];
         var p = f.properties;
         var marker = L.marker(latlng, { icon: buildIcon(p) });
-        marker.bindTooltip(p.name, {
+        marker.bindTooltip(p.shortName || p.name, {
           permanent: true,
           direction: "right",
           offset: [14, 0],

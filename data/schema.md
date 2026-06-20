@@ -11,7 +11,8 @@ properties below.
   "geometry": { "type": "Point", "coordinates": [LONGITUDE, LATITUDE] },
   "properties": {
     "id": "kebab-case-unique-id",
-    "name": "Display name shown on the label and detail panel",
+    "name": "Full display name, shown in the detail panel (and as the label when no shortName)",
+    "shortName": "Tea Cups",      // OPTIONAL: concise label shown on the map; falls back to name
     "park": "DLP",                // "DLP" = Disneyland Park, "WDS" = Disney Adventure World (ex-Walt Disney Studios)
     "category": "attraction",     // attraction | show | restaurant | shop | character | amenity
     "premierAccess": true,        // true if eligible for Premier Access / Premier Access Ultimate
@@ -29,7 +30,8 @@ properties below.
 |-------|----------|--------|---------|
 | `geometry.coordinates` | yes | `[lng, lat]` | **Longitude first**, then latitude (GeoJSON order). |
 | `id` | yes | unique string | Stable identifier. |
-| `name` | yes | string | Shown as the marker label and detail-panel title. |
+| `name` | yes | string | Full name; shown as the detail-panel title, and as the map label when there is no `shortName`. |
+| `shortName` | no | string | Concise label for the on-map permanent tooltip (e.g. `Tea Cups` for `Mad Hatter's Tea Cups`). The detail panel always uses the full `name`; omit to fall back to `name`. |
 | `park` | yes | `DLP`, `WDS` | Used by the per-park toggle. |
 | `category` | yes | `attraction`, `show`, `restaurant`, `shop`, `character`, `amenity` | Drives the marker emoji and the category filter. |
 | `premierAccess` | yes | `true` / `false` | `true` adds the ⚡ badge and is matched by the Premier Access filter. |
