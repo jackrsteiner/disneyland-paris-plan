@@ -23,12 +23,15 @@ This map turns that strategy into something you can see and filter on the ground
 
 ## What the map shows
 
-Each location is a marker built from three glanceable signals:
+Each location is a marker built from several glanceable signals:
 
 - **Category emoji** — 🎢 attraction · 🎭 show · 🍴 restaurant · 🛍️ shop · 🐭 character meet · 🚻 amenity.
 - **Queue-comfort badge** (bottom-left) — ❄️ air-conditioned queue · ⛱️ shaded/covered · ☀️ full sun.
   *(This is why Big Thunder Mountain reads as a ride with a ☀️ sun-baked queue, while Star Tours reads as ❄️.)*
-- **Premier Access badge** (bottom-right) — ⚡ means the attraction accepts Premier Access.
+- **Venue badge** (bottom-right) — 🧊 indoor A/C · 🏠 indoor · 🌳 outdoor (the experience itself).
+- **Premier Access badge** (top-right) — ⚡ means the attraction accepts Premier Access.
+- **Ride-height badge** (top-left) — on attractions only: ✅ your child clears the height · 🚫 too short.
+  The height defaults to **107 cm** and is adjustable via the **⚙️ settings** button (saved in your browser).
 
 The **name label** sits next to each marker (visible when you zoom in; toggle it in the legend).
 
@@ -55,6 +58,7 @@ A marker appears only if it passes **every** group:
 - **Queue comfort** — ❄️ / ⛱️ / ☀️.
 - **Venue** — indoor A/C / indoor / outdoor.
 - **Premier Access** — show only Premier Access locations.
+- **Rider height** — show only attractions your child (default 107 cm, set via ⚙️) is tall enough to ride; non-height locations stay visible.
 - **Labels** — show/hide the name labels.
 
 Pan and zoom freely; the map is built on OpenStreetMap tiles. *Disney Adventure World* is the

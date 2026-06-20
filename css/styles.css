@@ -43,11 +43,13 @@ html, body {
   overflow: hidden;
 }
 
+.legend-head { display: flex; align-items: stretch; }
 .legend-toggle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  flex: 1 1 auto;
+  width: auto;
   border: 0;
   background: var(--accent);
   color: #fff;
@@ -55,8 +57,19 @@ html, body {
   font-weight: 600;
   padding: 11px 14px;
   cursor: pointer;
-  border-radius: var(--radius) var(--radius) 0 0;
 }
+.settings-open {
+  flex: none;
+  border: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+  background: var(--accent);
+  color: #fff;
+  font-size: 17px;
+  line-height: 1;
+  padding: 0 13px;
+  cursor: pointer;
+}
+.settings-open:hover { filter: brightness(1.08); }
 .legend-toggle .chevron { transition: transform 0.2s ease; }
 .legend-toggle[aria-expanded="false"] .chevron { transform: rotate(-90deg); }
 
@@ -168,6 +181,9 @@ html, body {
 .dlp-marker .badge.queue { bottom: -3px; left: -4px; }
 .dlp-marker .badge.venue { bottom: -3px; right: -4px; }
 .dlp-marker .badge.pa { top: -3px; right: -4px; border-color: var(--pa); background: #fff7e8; }
+.dlp-marker .badge.height { top: -3px; left: -4px; }
+.dlp-marker .badge.height.ok { border-color: #3aa55c; background: #eef9f1; }
+.dlp-marker .badge.height.no { border-color: #d9534f; background: #fdecea; }
 
 /* permanent name labels */
 .dlp-label {
@@ -250,6 +266,48 @@ html, body {
 .tag.yes { background: #e7f6ec; color: #1f7a3d; }
 .tag.no { background: #f3f4f6; color: #6b7280; }
 
+/* ---------- Settings modal ---------- */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1500;
+  background: rgba(0, 0, 0, 0.4);
+}
+.modal-backdrop[hidden] { display: none; }
+.modal {
+  position: fixed;
+  z-index: 1600;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  max-width: calc(100% - 32px);
+  padding: 16px 18px 18px;
+}
+.modal[hidden] { display: none; }
+.modal h2 { font-size: 17px; margin: 2px 30px 10px 0; }
+.settings-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.settings-row input {
+  font: inherit;
+  font-weight: 400;
+  width: 100%;
+  padding: 7px 9px;
+  border: 1px solid #cdd4dc;
+  border-radius: 8px;
+}
+.settings-help {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.4;
+  margin: 10px 0 0;
+}
+
 /* ---------- Mobile: panels become bottom sheets ---------- */
 @media (max-width: 620px) {
   #legend {
@@ -268,6 +326,15 @@ html, body {
     width: 100%;
     max-width: 100%;
     max-height: 70%;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+  .modal {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
     border-radius: var(--radius) var(--radius) 0 0;
   }
 }

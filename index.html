@@ -18,10 +18,13 @@
 
   <!-- Legend / filter panel -->
   <aside id="legend" class="panel" aria-label="Legend and filters">
-    <button id="legend-toggle" class="legend-toggle" aria-expanded="true" aria-controls="legend-body">
-      <span class="legend-title">🗺️ Legend &amp; filters</span>
-      <span class="chevron" aria-hidden="true">▾</span>
-    </button>
+    <div class="legend-head">
+      <button id="legend-toggle" class="legend-toggle" aria-expanded="true" aria-controls="legend-body">
+        <span class="legend-title">🗺️ Legend &amp; filters</span>
+        <span class="chevron" aria-hidden="true">▾</span>
+      </button>
+      <button id="settings-open" class="settings-open" type="button" aria-label="Open settings" title="Settings">⚙️</button>
+    </div>
 
     <div id="legend-body" class="legend-body">
       <p class="hint">Tick or untick to filter the map. A location is shown only if it passes <em>every</em> group.</p>
@@ -62,6 +65,12 @@
         <label><input type="checkbox" id="filter-pa-only" /> <span class="swatch">⚡</span> Show only Premier Access locations</label>
       </section>
 
+      <section class="filter-group" data-group="height">
+        <h3>Rider height</h3>
+        <label><input type="checkbox" id="filter-height-ok" /> <span class="swatch">👦</span> Only rides my son (<span class="rider-height-cm">107</span>&nbsp;cm) can go on</label>
+        <p class="hint sub-hint">🎢 Attractions show ✅ / 🚫 for this height. Change it with the ⚙️ button.</p>
+      </section>
+
       <section class="filter-group" data-group="labels">
         <h3>Labels</h3>
         <label><input type="checkbox" id="filter-labels" checked /> <span class="swatch">🔤</span> Display labels</label>
@@ -79,6 +88,19 @@
     <button id="detail-close" class="detail-close" aria-label="Close details">×</button>
     <div id="detail-body"></div>
   </aside>
+
+  <!-- Settings modal -->
+  <div id="settings-backdrop" class="modal-backdrop" hidden></div>
+  <div id="settings" class="panel modal" role="dialog" aria-modal="true" aria-labelledby="settings-title" hidden>
+    <button id="settings-close" class="detail-close" type="button" aria-label="Close settings">×</button>
+    <h2 id="settings-title">⚙️ Settings</h2>
+    <label class="settings-row" for="rider-height-input">Rider height (cm)
+      <input type="number" id="rider-height-input" min="80" max="200" step="1" value="107"
+             inputmode="numeric" />
+    </label>
+    <p class="settings-help">Used for the 👦 ride-height badge (✅ / 🚫 on attractions) and the
+      “rides my son can go on” filter.</p>
+  </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="

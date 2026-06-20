@@ -35,6 +35,26 @@
 
   var LABEL_MIN_ZOOM = 16; // labels only render when zoomed in this far (avoids clutter)
 
+  // Rider height for the "can my child ride?" badge & filter. Defaults to 107 cm
+  // but is adjustable from the ⚙️ settings modal and persisted to localStorage.
+  var RIDER_HEIGHT_DEFAULT = 107;
+  var RIDER_HEIGHT_MIN = 80;
+  var RIDER_HEIGHT_MAX = 200;
+  var RIDER_HEIGHT_KEY = "dlp-rider-height";
+
+  function loadRiderHeight() {
+    try {
+      var v = parseInt(window.localStorage.getItem(RIDER_HEIGHT_KEY), 10);
+      if (!isNaN(v) && v >= RIDER_HEIGHT_MIN && v <= RIDER_HEIGHT_MAX) return v;
+    } catch (e) { /* localStorage unavailable */ }
+    return RIDER_HEIGHT_DEFAULT;
+  }
+  var riderHeight = loadRiderHeight();
+
+  function canRide(p) {
+    return p.heightMin == null || p.heightMin <= riderHeight;
+  }
+
   // ---- Map -------------------------------------------------------------
   var map = L.map("map", { zoomControl: true, maxZoom: 19, minZoom: 13 });
   L.control.scale({ imperial: false }).addTo(map);
@@ -55,7 +75,8 @@
     category: new Set(["attraction", "show", "restaurant", "shop", "character", "amenity"]),
     queueEnv: new Set(["ac", "shaded", "sun"]),
     venueEnv: new Set(["indoor-ac", "indoor", "outdoor"]),
-    premierAccessOnly: false
+    premierAccessOnly: false,
+    heightOk: false
   };
   var showLabels = true;
 
@@ -68,6 +89,7 @@
     var html =
       '<div class="pin">' +
       cat +
+      heightBadge(p) +
       '<span class="badge queue" title="' + q.label + '">' + q.emoji + "</span>" +
       '<span class="badge venue" title="' + v.label + '">' + v.emoji + "</span>" +
       paBadge +
@@ -81,12 +103,27 @@
     });
   }
 
+  // Top-left badge: whether the configured rider height clears this attraction.
+  // Only attractions get a badge; rides with no minimum read as ✅.
+  function heightBadge(p) {
+    if (p.category !== "attraction") return "";
+    var ok = canRide(p);
+    var title = ok
+      ? (p.heightMin == null
+          ? "OK for " + riderHeight + " cm — no height minimum"
+          : "OK for " + riderHeight + " cm (needs " + p.heightMin + " cm)")
+      : "Too short — needs " + p.heightMin + " cm";
+    return '<span class="badge height ' + (ok ? "ok" : "no") + '" title="' + title + '">' +
+      (ok ? "✅" : "🚫") + "</span>";
+  }
+
   function passesFilters(p) {
     if (!filters.park.has(p.park)) return false;
     if (!filters.category.has(p.category)) return false;
     if (!filters.queueEnv.has(p.queueEnv)) return false;
     if (!filters.venueEnv.has(p.venueEnv)) return false;
     if (filters.premierAccessOnly && !p.premierAccess) return false;
+    if (filters.heightOk && p.heightMin != null && p.heightMin > riderHeight) return false;
     return true;
   }
 
@@ -233,6 +270,11 @@
     applyFilters();
   });
 
+  document.getElementById("filter-height-ok").addEventListener("change", function (e) {
+    filters.heightOk = e.target.checked;
+    applyFilters();
+  });
+
   document.getElementById("filter-labels").addEventListener("change", function (e) {
     showLabels = e.target.checked;
     updateLabelVisibility();
@@ -244,10 +286,83 @@
     filters.queueEnv = new Set(["ac", "shaded", "sun"]);
     filters.venueEnv = new Set(["indoor-ac", "indoor", "outdoor"]);
     filters.premierAccessOnly = false;
+    filters.heightOk = false;
     document.querySelectorAll('input[data-filter]').forEach(function (i) { i.checked = true; });
     document.getElementById("filter-pa-only").checked = false;
+    document.getElementById("filter-height-ok").checked = false;
     applyFilters();
   });
+
+  // ---- Rider height & settings modal ----------------------------------
+  // Badges are baked into each divIcon, so changing the height means rebuilding
+  // the attraction icons; the filter label and any active filtering refresh too.
+  function refreshHeightUI() {
+    entries.forEach(function (e) {
+      if (e.props.category === "attraction") e.marker.setIcon(buildIcon(e.props));
+    });
+    var cmEls = document.querySelectorAll(".rider-height-cm");
+    for (var i = 0; i < cmEls.length; i++) cmEls[i].textContent = riderHeight;
+    applyFilters();
+  }
+
+  function setRiderHeight(cm) {
+    cm = parseInt(cm, 10);
+    if (isNaN(cm)) return;
+    cm = Math.max(RIDER_HEIGHT_MIN, Math.min(RIDER_HEIGHT_MAX, cm));
+    riderHeight = cm;
+    try { window.localStorage.setItem(RIDER_HEIGHT_KEY, String(cm)); } catch (e) { /* ignore */ }
+    refreshHeightUI();
+  }
+
+  var settingsModal = document.getElementById("settings");
+  var settingsBackdrop = document.getElementById("settings-backdrop");
+  var heightInput = document.getElementById("rider-height-input");
+  var lastFocus = null;
+
+  function onSettingsKeydown(e) {
+    if (e.key === "Escape") { closeSettings(); return; }
+    if (e.key !== "Tab") return;
+    var f = settingsModal.querySelectorAll("button, input");
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+  function openSettings() {
+    heightInput.value = riderHeight;
+    lastFocus = document.activeElement;
+    settingsBackdrop.hidden = false;
+    settingsModal.hidden = false;
+    heightInput.focus();
+    heightInput.select();
+    document.addEventListener("keydown", onSettingsKeydown);
+  }
+  function closeSettings() {
+    settingsModal.hidden = true;
+    settingsBackdrop.hidden = true;
+    document.removeEventListener("keydown", onSettingsKeydown);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  document.getElementById("settings-open").addEventListener("click", openSettings);
+  document.getElementById("settings-close").addEventListener("click", closeSettings);
+  settingsBackdrop.addEventListener("click", closeSettings);
+  // Live-update while typing only for in-range values; clamp & tidy on commit.
+  heightInput.addEventListener("input", function () {
+    var v = parseInt(heightInput.value, 10);
+    if (!isNaN(v) && v >= RIDER_HEIGHT_MIN && v <= RIDER_HEIGHT_MAX) setRiderHeight(v);
+  });
+  heightInput.addEventListener("change", function () {
+    setRiderHeight(heightInput.value);
+    heightInput.value = riderHeight;
+  });
+
+  // Reflect the persisted height in the legend label / input on first load.
+  (function initRiderHeight() {
+    heightInput.value = riderHeight;
+    var cmEls = document.querySelectorAll(".rider-height-cm");
+    for (var i = 0; i < cmEls.length; i++) cmEls[i].textContent = riderHeight;
+  })();
 
   // ---- Legend collapse -------------------------------------------------
   var legendToggle = document.getElementById("legend-toggle");
