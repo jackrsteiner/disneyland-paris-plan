@@ -201,6 +201,33 @@
     });
   });
 
+  // Clicking a filter's *name* isolates it (show only that one). Clicking the
+  // name again, when it is already the only active value, restores the group.
+  // Generalised over data-isolate groups; only "category" is wired in the markup.
+  function allValuesFor(group) {
+    var vals = [];
+    document.querySelectorAll('input[data-filter="' + group + '"]').forEach(function (i) {
+      vals.push(i.value);
+    });
+    return vals;
+  }
+
+  function isolate(group, value) {
+    var set = filters[group];
+    var isOnlyThis = set.size === 1 && set.has(value);
+    filters[group] = new Set(isOnlyThis ? allValuesFor(group) : [value]);
+    document.querySelectorAll('input[data-filter="' + group + '"]').forEach(function (i) {
+      i.checked = filters[group].has(i.value);
+    });
+    applyFilters();
+  }
+
+  document.querySelectorAll('[data-isolate]').forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      isolate(btn.getAttribute("data-isolate"), btn.getAttribute("data-value"));
+    });
+  });
+
   document.getElementById("filter-pa-only").addEventListener("change", function (e) {
     filters.premierAccessOnly = e.target.checked;
     applyFilters();
