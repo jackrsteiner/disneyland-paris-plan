@@ -16,15 +16,15 @@
 <body>
   <div id="map" aria-label="Map of Disneyland Paris"></div>
 
+  <!-- Floating settings button (top-right of the map) -->
+  <button id="settings-open" class="settings-open" type="button" aria-label="Open settings" title="Settings">⚙️</button>
+
   <!-- Legend / filter panel -->
   <aside id="legend" class="panel" aria-label="Legend and filters">
-    <div class="legend-head">
-      <button id="legend-toggle" class="legend-toggle" aria-expanded="true" aria-controls="legend-body">
-        <span class="legend-title">🗺️ Legend &amp; filters</span>
-        <span class="chevron" aria-hidden="true">▾</span>
-      </button>
-      <button id="settings-open" class="settings-open" type="button" aria-label="Open settings" title="Settings">⚙️</button>
-    </div>
+    <button id="legend-toggle" class="legend-toggle" aria-expanded="true" aria-controls="legend-body">
+      <span class="legend-title">🗺️ Legend &amp; filters</span>
+      <span class="chevron" aria-hidden="true">▾</span>
+    </button>
 
     <div id="legend-body" class="legend-body">
       <p class="hint">Tick or untick to filter the map. A location is shown only if it passes <em>every</em> group.</p>
