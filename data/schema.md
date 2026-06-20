@@ -47,6 +47,9 @@ are filtered independently in the legend.
 
 ## Accuracy note
 
-Coordinates are approximate (placed by land/layout, since the build environment could not reach
-a geocoding service) and Premier Access / A/C / height values are curated from public 2026
-sources. Treat them as best-effort and correct anything you spot — it is a one-line edit here.
+Coordinates are sourced from **OpenStreetMap** (Overpass API, June 2026) and should be accurate
+to each attraction's footprint. The only exceptions are the brand-new World of Frozen rides
+(Frozen Ever After and its show/shop), which are not yet mapped in OSM and were placed within the
+correct land by anchoring to their mapped neighbours. Premier Access / A/C / height values are
+curated from public 2026 sources. Treat the curated attributes as best-effort and correct anything
+you spot — it is a one-line edit here.
