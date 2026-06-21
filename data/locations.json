@@ -2,9 +2,9 @@
   "type": "FeatureCollection",
   "metadata": {
     "description": "Disneyland Paris locations for the heat & queue planning map.",
-    "lastUpdated": "2026-06-20",
+    "lastUpdated": "2026-06-21",
     "accuracy": "Coordinates are now sourced from OpenStreetMap (Overpass API, June 2026) and should be accurate to each attraction's footprint; the brand-new World of Frozen rides (Frozen Ever After and its show/shop), not yet mapped in OSM, are placed within the correct land by anchoring to their mapped neighbours. Premier Access, A/C status and rider heights remain curated from public 2026 info — edit this one file to correct anything.",
-    "notes": "Walt Disney Studios Park was reimagined as 'Disney Adventure World' on 29 March 2026; World of Frozen / Frozen Ever After opened the same day."
+    "notes": "Walt Disney Studios Park was reimagined as 'Disney Adventure World' on 29 March 2026; World of Frozen / Frozen Ever After opened the same day. 2026-06-21: greatly expanded amenity, shop and snack-stand coverage from OpenStreetMap (toilets, water fountains, gift shops, rentals and quick-service snack kiosks); toilet/water points are unnamed in OSM and are labelled by land. A/C status for the new shops/snacks is a best-effort default — correct anything that's off."
   },
   "features": [
     {
@@ -1175,6 +1175,2006 @@
         "heightMin": null,
         "summary": "Magic-carpet spinner",
         "heatNote": "Aladdin magic-carpet spinner. Fully exposed queue and ride; one for the cooler parts of the day."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77263, 48.87184] },
+      "properties": {
+        "id": "toilets-adventureland",
+        "name": "Toilets — Adventureland",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Adventureland."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77543, 48.87267] },
+      "properties": {
+        "id": "toilets-adventureland-2",
+        "name": "Toilets — Adventureland 2",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Adventureland."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7755, 48.87259] },
+      "properties": {
+        "id": "water-fountain-adventureland",
+        "name": "Water Fountain — Adventureland",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Adventureland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77364, 48.87252] },
+      "properties": {
+        "id": "water-fountain-adventureland-2",
+        "name": "Water Fountain — Adventureland 2",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Adventureland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77539, 48.87268] },
+      "properties": {
+        "id": "water-fountain-adventureland-3",
+        "name": "Water Fountain — Adventureland 3",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Adventureland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77517, 48.87241] },
+      "properties": {
+        "id": "la-girafe-curieuse",
+        "name": "La Girafe Curieuse",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Adventureland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77286, 48.87335] },
+      "properties": {
+        "id": "le-coffre-du-capitaine",
+        "name": "Le Coffre du Capitaine",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Adventureland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77497, 48.87265] },
+      "properties": {
+        "id": "les-tresors-de-scheherazade",
+        "name": "Les Trésors de Schéhérazade",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Adventureland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77244, 48.87242] },
+      "properties": {
+        "id": "temple-traders-boutique",
+        "name": "Temple Traders Boutique",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Adventureland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77467, 48.87236] },
+      "properties": {
+        "id": "cafe-de-la-brousse",
+        "name": "Café de la Brousse",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Café & cold drinks",
+        "heatNote": "Mostly shaded counter in Adventureland — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77386, 48.87193] },
+      "properties": {
+        "id": "cool-post",
+        "name": "Cool Post",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Café & cold drinks",
+        "heatNote": "Mostly shaded counter in Adventureland — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77816, 48.87457] },
+      "properties": {
+        "id": "toilets-discoveryland-2",
+        "name": "Toilets — Discoveryland 2",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Discoveryland."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77895, 48.87292] },
+      "properties": {
+        "id": "toilets-discoveryland-3",
+        "name": "Toilets — Discoveryland 3",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Discoveryland."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77657, 48.87401] },
+      "properties": {
+        "id": "toilets-discoveryland-4",
+        "name": "Toilets — Discoveryland 4",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Discoveryland."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77885, 48.87294] },
+      "properties": {
+        "id": "water-fountain-discoveryland",
+        "name": "Water Fountain — Discoveryland",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Discoveryland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77663, 48.87406] },
+      "properties": {
+        "id": "water-fountain-discoveryland-2",
+        "name": "Water Fountain — Discoveryland 2",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Discoveryland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77767, 48.87323] },
+      "properties": {
+        "id": "constellations",
+        "name": "Constellations",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Discoveryland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77921, 48.87472] },
+      "properties": {
+        "id": "star-traders",
+        "name": "Star Traders",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Discoveryland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7781, 48.87326] },
+      "properties": {
+        "id": "cool-station",
+        "name": "Cool Station",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Café & cold drinks",
+        "heatNote": "Mostly shaded counter in Discoveryland — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77937, 48.87442] },
+      "properties": {
+        "id": "rocket-cafe",
+        "name": "Rocket Café",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Café & cold drinks",
+        "heatNote": "Mostly shaded counter in Discoveryland — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77351, 48.87409] },
+      "properties": {
+        "id": "toilets-fantasyland",
+        "name": "Toilets — Fantasyland",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Fantasyland."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77446, 48.87332] },
+      "properties": {
+        "id": "toilets-fantasyland-2",
+        "name": "Toilets — Fantasyland 2",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Fantasyland."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77366, 48.87416] },
+      "properties": {
+        "id": "water-fountain-fantasyland",
+        "name": "Water Fountain — Fantasyland",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Fantasyland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77439, 48.87341] },
+      "properties": {
+        "id": "water-fountain-fantasyland-2",
+        "name": "Water Fountain — Fantasyland 2",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Fantasyland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77478, 48.87359] },
+      "properties": {
+        "id": "la-bottega-di-geppetto",
+        "name": "La Bottega di Geppetto",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Fantasyland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77609, 48.8732] },
+      "properties": {
+        "id": "la-boutique-du-chateau",
+        "name": "La Boutique du Château",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Fantasyland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77555, 48.87324] },
+      "properties": {
+        "id": "la-chaumiere-des-sept-nains",
+        "name": "La Chaumière des Sept Nains",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Fantasyland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77593, 48.87348] },
+      "properties": {
+        "id": "la-confiserie-des-trois-fees",
+        "name": "La Confiserie des Trois Fées",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Sweets & candy shop",
+        "heatNote": "Air-conditioned Fantasyland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.776, 48.87314] },
+      "properties": {
+        "id": "merlin-l-enchanteur",
+        "name": "Merlin l'Enchanteur",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Jewellery boutique",
+        "heatNote": "Air-conditioned Fantasyland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77572, 48.87394] },
+      "properties": {
+        "id": "sir-mickey-s-boutique",
+        "name": "Sir Mickey's Boutique",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Fantasyland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77552, 48.87414] },
+      "properties": {
+        "id": "l-arbre-enchante",
+        "name": "L'Arbre Enchanté",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Café & cold drinks",
+        "heatNote": "Mostly shaded counter in Fantasyland — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7749, 48.87452] },
+      "properties": {
+        "id": "march-hare-refreshments",
+        "name": "March Hare Refreshments",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Café & cold drinks",
+        "heatNote": "Mostly shaded counter in Fantasyland — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77505, 48.8749] },
+      "properties": {
+        "id": "the-old-mill",
+        "name": "The Old Mill",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Café & cold drinks",
+        "heatNote": "Mostly shaded counter in Fantasyland — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77597, 48.87194] },
+      "properties": {
+        "id": "toilets-frontierland",
+        "name": "Toilets — Frontierland",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Frontierland."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77697, 48.87122] },
+      "properties": {
+        "id": "toilets-frontierland-2",
+        "name": "Toilets — Frontierland 2",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Frontierland."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77393, 48.87154] },
+      "properties": {
+        "id": "toilets-frontierland-3",
+        "name": "Toilets — Frontierland 3",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Frontierland."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77406, 48.87153] },
+      "properties": {
+        "id": "water-fountain-frontierland",
+        "name": "Water Fountain — Frontierland",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Frontierland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77725, 48.87077] },
+      "properties": {
+        "id": "water-fountain-frontierland-2",
+        "name": "Water Fountain — Frontierland 2",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Frontierland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.776, 48.87194] },
+      "properties": {
+        "id": "water-fountain-frontierland-3",
+        "name": "Water Fountain — Frontierland 3",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Frontierland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77523, 48.8714] },
+      "properties": {
+        "id": "water-fountain-frontierland-4",
+        "name": "Water Fountain — Frontierland 4",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Frontierland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77517, 48.87168] },
+      "properties": {
+        "id": "water-fountain-frontierland-5",
+        "name": "Water Fountain — Frontierland 5",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Frontierland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77467, 48.87124] },
+      "properties": {
+        "id": "water-fountain-frontierland-6",
+        "name": "Water Fountain — Frontierland 6",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Frontierland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77394, 48.87171] },
+      "properties": {
+        "id": "indiana-jonestm-adventure-outpost",
+        "name": "Indiana Jones™ Adventure Outpost",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Frontierland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77388, 48.87054] },
+      "properties": {
+        "id": "pueblo-trading-post",
+        "name": "Pueblo Trading Post",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Frontierland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77621, 48.87142] },
+      "properties": {
+        "id": "ben-jerry-s-ice-house",
+        "name": "Ben & Jerry's Ice House",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Ice-cream parlour",
+        "heatNote": "Mostly shaded counter in Frontierland — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77235, 48.87051] },
+      "properties": {
+        "id": "critter-corral",
+        "name": "Critter Corral",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "summary": "Snack kiosk",
+        "heatNote": "Open-air counter in Frontierland — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77929, 48.87125] },
+      "properties": {
+        "id": "toilets-main-street",
+        "name": "Toilets — Main Street",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Main Street."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77871, 48.87027] },
+      "properties": {
+        "id": "toilets-main-street-2",
+        "name": "Toilets — Main Street 2",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Main Street."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77842, 48.87064] },
+      "properties": {
+        "id": "toilets-main-street-3",
+        "name": "Toilets — Main Street 3",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Main Street."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77856, 48.87186] },
+      "properties": {
+        "id": "toilets-main-street-4",
+        "name": "Toilets — Main Street 4",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Main Street."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77759, 48.87135] },
+      "properties": {
+        "id": "toilets-main-street-5",
+        "name": "Toilets — Main Street 5",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Main Street."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77808, 48.87221] },
+      "properties": {
+        "id": "toilets-main-street-6",
+        "name": "Toilets — Main Street 6",
+        "shortName": "Toilets",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Main Street."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77871, 48.87121] },
+      "properties": {
+        "id": "water-fountain-main-street-2",
+        "name": "Water Fountain — Main Street 2",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Main Street — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77935, 48.87077] },
+      "properties": {
+        "id": "water-fountain-main-street-3",
+        "name": "Water Fountain — Main Street 3",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Main Street — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77913, 48.87064] },
+      "properties": {
+        "id": "water-fountain-main-street-4",
+        "name": "Water Fountain — Main Street 4",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Main Street — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77856, 48.87114] },
+      "properties": {
+        "id": "water-fountain-main-street-5",
+        "name": "Water Fountain — Main Street 5",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Main Street — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77793, 48.87239] },
+      "properties": {
+        "id": "water-fountain-main-street-6",
+        "name": "Water Fountain — Main Street 6",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Main Street — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77932, 48.87121] },
+      "properties": {
+        "id": "water-fountain-main-street-7",
+        "name": "Water Fountain — Main Street 7",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Main Street — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77752, 48.87263] },
+      "properties": {
+        "id": "water-fountain-main-street-8",
+        "name": "Water Fountain — Main Street 8",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Main Street — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.78009, 48.8696] },
+      "properties": {
+        "id": "water-fountain-main-street-9",
+        "name": "Water Fountain — Main Street 9",
+        "shortName": "Water",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Main Street — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77852, 48.87155] },
+      "properties": {
+        "id": "boardwalk-candy-palace-parraine-par-m-m-s",
+        "name": "Boardwalk Candy Palace, parrainé par M&M'S",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Sweets & candy shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77781, 48.87194] },
+      "properties": {
+        "id": "cookie-kitchen",
+        "name": "Cookie Kitchen",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Bakery & treats",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77774, 48.87144] },
+      "properties": {
+        "id": "dapper-dan-s-hair-cuts",
+        "name": "Dapper Dan's Hair Cuts",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Barber shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77749, 48.87172] },
+      "properties": {
+        "id": "disney-co",
+        "name": "Disney & Co.",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77841, 48.87165] },
+      "properties": {
+        "id": "disney-clothiers",
+        "name": "Disney Clothiers",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Disney clothing shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77801, 48.87196] },
+      "properties": {
+        "id": "harrington-s-fine-china-and-porcelains",
+        "name": "Harrington's Fine China and Porcelains",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Collectibles shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77766, 48.87173] },
+      "properties": {
+        "id": "lilly-s-boutique",
+        "name": "Lilly's Boutique",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Home & decor shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77829, 48.87168] },
+      "properties": {
+        "id": "main-street-motors",
+        "name": "Main Street Motors",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77997, 48.87034] },
+      "properties": {
+        "id": "my-royal-dream",
+        "name": "My Royal Dream",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Makeover boutique",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77832, 48.87176] },
+      "properties": {
+        "id": "newsstand-periodicalls-jour",
+        "name": "Newsstand: Periodicalls + Jour",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77983, 48.87073] },
+      "properties": {
+        "id": "plaza-east-boutique",
+        "name": "Plaza East Boutique",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77913, 48.87033] },
+      "properties": {
+        "id": "plaza-west-boutique",
+        "name": "Plaza West Boutique",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77912, 48.87142] },
+      "properties": {
+        "id": "ribbons-and-bows-hat-shop",
+        "name": "Ribbons and Bows Hat Shop",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Disney clothing shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.78017, 48.87045] },
+      "properties": {
+        "id": "royal-collection-boutique",
+        "name": "Royal Collection Boutique",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77822, 48.87092] },
+      "properties": {
+        "id": "the-storybook-store",
+        "name": "The Storybook Store",
+        "park": "DLP",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Main Street shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77752, 48.87114] },
+      "properties": {
+        "id": "pret-a-manger",
+        "name": "Pret A Manger",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "summary": "Quick-service snacks",
+        "heatNote": "Open-air counter in Main Street — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77842, 48.87181] },
+      "properties": {
+        "id": "the-coffee-grinder",
+        "name": "The Coffee Grinder",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Café & cold drinks",
+        "heatNote": "Mostly shaded counter in Main Street — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77773, 48.87206] },
+      "properties": {
+        "id": "the-gibson-girl-ice-cream-parlour",
+        "name": "The Gibson Girl Ice Cream Parlour",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Ice-cream parlour",
+        "heatNote": "Mostly shaded counter in Main Street — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77833, 48.87186] },
+      "properties": {
+        "id": "the-ice-cream-company",
+        "name": "The Ice Cream Company",
+        "park": "DLP",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Ice-cream parlour",
+        "heatNote": "Mostly shaded counter in Main Street — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77998, 48.87104] },
+      "properties": {
+        "id": "consigne-disneyland",
+        "name": "Consigne Disneyland",
+        "shortName": "Lockers",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Lockers to stash bags and shopping near the entrance."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7801, 48.87074] },
+      "properties": {
+        "id": "service-carte-handicape",
+        "name": "Service Carte Handicapé",
+        "shortName": "Guest Services",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Guest accessibility services (disability card and assistance)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77946, 48.87117] },
+      "properties": {
+        "id": "stroller-and-wheelchair-rentals",
+        "name": "Stroller and Wheelchair Rentals",
+        "shortName": "Rentals",
+        "park": "DLP",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Stroller and wheelchair rentals near the park entrance."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77907, 48.86625] },
+      "properties": {
+        "id": "toilets-avengers-campus",
+        "name": "Toilets — Avengers Campus",
+        "shortName": "Toilets",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Avengers Campus."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77975, 48.8658] },
+      "properties": {
+        "id": "toilets-avengers-campus-2",
+        "name": "Toilets — Avengers Campus 2",
+        "shortName": "Toilets",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Avengers Campus."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77967, 48.86576] },
+      "properties": {
+        "id": "water-fountain-avengers-campus",
+        "name": "Water Fountain — Avengers Campus",
+        "shortName": "Water",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Avengers Campus — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77913, 48.86559] },
+      "properties": {
+        "id": "mission-equipment",
+        "name": "Mission Equipment",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Avengers Campus shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77832, 48.86566] },
+      "properties": {
+        "id": "fan-tastic-food-truck",
+        "name": "FAN-tastic Food Truck",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "summary": "Quick-service snacks",
+        "heatNote": "Open-air counter in Avengers Campus — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77896, 48.86549] },
+      "properties": {
+        "id": "web-food-truck",
+        "name": "WEB Food Truck",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "summary": "Quick-service snacks",
+        "heatNote": "Open-air counter in Avengers Campus — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.78, 48.86831] },
+      "properties": {
+        "id": "toilets-front-lot",
+        "name": "Toilets — Front Lot",
+        "shortName": "Toilets",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Front Lot."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.78072, 48.86784] },
+      "properties": {
+        "id": "walt-disney-studios-store",
+        "name": "Walt Disney Studios Store",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Front Lot shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77945, 48.86734] },
+      "properties": {
+        "id": "toilets-production-courtyard",
+        "name": "Toilets — Production Courtyard",
+        "shortName": "Toilets",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Production Courtyard."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77908, 48.8663] },
+      "properties": {
+        "id": "water-fountain-production-courtyard",
+        "name": "Water Fountain — Production Courtyard",
+        "shortName": "Water",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Production Courtyard — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77942, 48.8674] },
+      "properties": {
+        "id": "water-fountain-production-courtyard-2",
+        "name": "Water Fountain — Production Courtyard 2",
+        "shortName": "Water",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Production Courtyard — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7784, 48.86674] },
+      "properties": {
+        "id": "blossom-bloom-boutique",
+        "name": "Blossom & Bloom Boutique",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Production Courtyard shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77995, 48.86768] },
+      "properties": {
+        "id": "glamour-girl",
+        "name": "Glamour Girl",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Jewellery boutique",
+        "heatNote": "Air-conditioned Production Courtyard shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77982, 48.86754] },
+      "properties": {
+        "id": "mickey-s-of-hollywood-boutique",
+        "name": "Mickey's of Hollywood Boutique",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Production Courtyard shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77933, 48.86721] },
+      "properties": {
+        "id": "opening-night-gifts",
+        "name": "Opening Night Gifts",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Production Courtyard shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7789, 48.86644] },
+      "properties": {
+        "id": "tower-hotel-gifts",
+        "name": "Tower Hotel Gifts",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Production Courtyard shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77957, 48.86708] },
+      "properties": {
+        "id": "ice-cream-creations",
+        "name": "Ice Cream Creations",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Ice-cream parlour",
+        "heatNote": "Mostly shaded counter in Production Courtyard — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77788, 48.8664] },
+      "properties": {
+        "id": "promenade-popcorn",
+        "name": "Promenade Popcorn",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "summary": "Popcorn & treats",
+        "heatNote": "Open-air counter in Production Courtyard — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7796, 48.8675] },
+      "properties": {
+        "id": "searchlight-refreshments-and-snacks",
+        "name": "Searchlight: refreshments and snacks",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "summary": "Café & cold drinks",
+        "heatNote": "Mostly shaded counter in Production Courtyard — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77539, 48.86643] },
+      "properties": {
+        "id": "toilets-toon-studio",
+        "name": "Toilets — Toon Studio",
+        "shortName": "Toilets",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Toon Studio."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7799, 48.86942] },
+      "properties": {
+        "id": "water-fountain-toon-studio",
+        "name": "Water Fountain — Toon Studio",
+        "shortName": "Water",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Toon Studio — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77536, 48.86643] },
+      "properties": {
+        "id": "water-fountain-toon-studio-2",
+        "name": "Water Fountain — Toon Studio 2",
+        "shortName": "Water",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Toon Studio — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77851, 48.86741] },
+      "properties": {
+        "id": "animation-boutique",
+        "name": "Animation Boutique",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Toon Studio shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77852, 48.86797] },
+      "properties": {
+        "id": "intermission-gifts",
+        "name": "Intermission Gifts",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Toon Studio shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77462, 48.86631] },
+      "properties": {
+        "id": "le-petit-papillon",
+        "name": "Le Petit Papillon",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Toon Studio shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77428, 48.8662] },
+      "properties": {
+        "id": "chez-berlioz",
+        "name": "Chez Berlioz",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "summary": "Quick-service snacks",
+        "heatNote": "Open-air counter in Toon Studio — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77415, 48.86615] },
+      "properties": {
+        "id": "chez-marie",
+        "name": "Chez Marie",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "summary": "Quick-service snacks",
+        "heatNote": "Open-air counter in Toon Studio — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77442, 48.86624] },
+      "properties": {
+        "id": "chez-toulouse",
+        "name": "Chez Toulouse",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "summary": "Quick-service snacks",
+        "heatNote": "Open-air counter in Toon Studio — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77852, 48.86712] },
+      "properties": {
+        "id": "flutes-treats",
+        "name": "Flutes & Treats",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "summary": "Cold drinks & snacks",
+        "heatNote": "Open-air counter in Toon Studio — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77522, 48.86662] },
+      "properties": {
+        "id": "kiosque-la-vache-qui-rit",
+        "name": "Kiosque La Vache qui Rit",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "summary": "Quick-service snacks",
+        "heatNote": "Open-air counter in Toon Studio — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77846, 48.86709] },
+      "properties": {
+        "id": "sweet-delights",
+        "name": "Sweet Delights",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "summary": "Quick-service snacks",
+        "heatNote": "Open-air counter in Toon Studio — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77804, 48.86718] },
+      "properties": {
+        "id": "toilets-toy-story-playland",
+        "name": "Toilets — Toy Story Playland",
+        "shortName": "Toilets",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Toy Story Playland."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77811, 48.86716] },
+      "properties": {
+        "id": "water-fountain-toy-story-playland",
+        "name": "Water Fountain — Toy Story Playland",
+        "shortName": "Water",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in Toy Story Playland — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7768, 48.86764] },
+      "properties": {
+        "id": "chez-marianne-souvenir-de-paris",
+        "name": "Chez Marianne (Souvenir de Paris)",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Toy Story Playland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77613, 48.86714] },
+      "properties": {
+        "id": "toy-story-playland-boutique",
+        "name": "Toy Story Playland Boutique",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned Toy Story Playland shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77428, 48.86421] },
+      "properties": {
+        "id": "toilets-world-of-frozen",
+        "name": "Toilets — World of Frozen",
+        "shortName": "Toilets",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in World of Frozen."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77691, 48.86551] },
+      "properties": {
+        "id": "toilets-world-of-frozen-2",
+        "name": "Toilets — World of Frozen 2",
+        "shortName": "Toilets",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in World of Frozen."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77685, 48.86553] },
+      "properties": {
+        "id": "water-fountain-world-of-frozen",
+        "name": "Water Fountain — World of Frozen",
+        "shortName": "Water",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "heatNote": "Free drinking-water point in World of Frozen — refill bottles often in the heat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77369, 48.86429] },
+      "properties": {
+        "id": "fjord-view-shop",
+        "name": "Fjord View Shop",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned World of Frozen shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77623, 48.86555] },
+      "properties": {
+        "id": "la-petite-libellule",
+        "name": "La Petite Libellule",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned World of Frozen shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7765, 48.86604] },
+      "properties": {
+        "id": "la-petite-luciole",
+        "name": "La Petite Luciole",
+        "park": "WDS",
+        "category": "shop",
+        "premierAccess": false,
+        "queueEnv": "ac",
+        "venueEnv": "indoor-ac",
+        "heightMin": null,
+        "summary": "Souvenir & gift shop",
+        "heatNote": "Air-conditioned World of Frozen shop — a cool spot to browse out of the sun."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.77689, 48.86539] },
+      "properties": {
+        "id": "cafe-luminosity",
+        "name": "Café Luminosity",
+        "park": "WDS",
+        "category": "restaurant",
+        "premierAccess": false,
+        "queueEnv": "sun",
+        "venueEnv": "outdoor",
+        "heightMin": null,
+        "summary": "Quick-service snacks",
+        "heatNote": "Open-air counter in World of Frozen — grab a cold treat and find shade to eat."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.7765, 48.86761] },
+      "properties": {
+        "id": "toilets-worlds-of-pixar",
+        "name": "Toilets — Worlds of Pixar",
+        "shortName": "Toilets",
+        "park": "WDS",
+        "category": "amenity",
+        "premierAccess": false,
+        "queueEnv": "shaded",
+        "venueEnv": "indoor",
+        "heightMin": null,
+        "heatNote": "Restrooms in Worlds of Pixar."
       }
     }
   ]
