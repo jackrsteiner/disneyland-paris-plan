@@ -16,6 +16,15 @@
 <body>
   <div id="map" aria-label="Map of Disneyland Paris"></div>
 
+  <!-- Search box (top-centre of the map) -->
+  <div id="poi-search" class="poi-search">
+    <input id="poi-search-input" type="search" autocomplete="off" spellcheck="false"
+           placeholder="Search rides, shows, dining…"
+           role="combobox" aria-expanded="false" aria-controls="poi-search-results"
+           aria-autocomplete="list" aria-label="Search attractions, shows and restaurants" />
+    <ul id="poi-search-results" class="poi-search-results" role="listbox" hidden></ul>
+  </div>
+
   <!-- Floating map controls (top-right of the map) -->
   <div class="map-fabs">
     <button id="locate-toggle" class="map-fab" type="button" aria-label="Show my location" aria-pressed="false" title="Show my location">📍</button>

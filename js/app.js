@@ -228,6 +228,128 @@
     countEl.textContent = visible + " / " + entries.length + " shown";
   }
 
+  // ---- Search ----------------------------------------------------------
+  // Accent-insensitive, lower-cased normaliser ("peril" matches "Péril").
+  function norm(s) {
+    return (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  }
+  var SEARCH_CATEGORIES = { attraction: true, show: true, restaurant: true };
+
+  function initSearch() {
+    var input = document.getElementById("poi-search-input");
+    var list = document.getElementById("poi-search-results");
+    if (!input || !list) return;
+
+    // Build the index once from the searchable categories only.
+    var index = entries
+      .filter(function (e) { return SEARCH_CATEGORIES[e.props.category]; })
+      .map(function (e) {
+        return { entry: e, hay: norm(e.props.name + " " + (e.props.shortName || "")) };
+      });
+
+    var matches = [];   // current suggestion entries
+    var active = -1;    // highlighted index
+
+    function close() {
+      list.hidden = true;
+      list.innerHTML = "";
+      matches = [];
+      active = -1;
+      input.setAttribute("aria-expanded", "false");
+      input.removeAttribute("aria-activedescendant");
+    }
+
+    function render() {
+      list.innerHTML = "";
+      matches.forEach(function (e, i) {
+        var p = e.props;
+        var li = document.createElement("li");
+        li.id = "poi-search-opt-" + i;
+        li.setAttribute("role", "option");
+        if (i === active) li.className = "active";
+        li.innerHTML =
+          '<span class="s-emoji">' + (CATEGORY_EMOJI[p.category] || "📍") + "</span>" +
+          '<span class="s-name"></span>' +
+          '<span class="s-park">' + (PARK_LABEL[p.park] || p.park) + "</span>";
+        li.querySelector(".s-name").textContent = p.name; // textContent avoids HTML injection
+        // mousedown fires before the input's blur, so the click still registers.
+        li.addEventListener("mousedown", function (ev) {
+          ev.preventDefault();
+          selectResult(e);
+        });
+        list.appendChild(li);
+      });
+      list.hidden = matches.length === 0;
+      input.setAttribute("aria-expanded", matches.length ? "true" : "false");
+    }
+
+    function search(q) {
+      var n = norm(q).trim();
+      if (!n) { close(); return; }
+      var prefix = [], other = [];
+      index.forEach(function (item) {
+        var pos = item.hay.indexOf(n);
+        if (pos === 0) prefix.push(item.entry);
+        else if (pos > 0) other.push(item.entry);
+      });
+      function byName(a, b) { return a.props.name.localeCompare(b.props.name); }
+      prefix.sort(byName); other.sort(byName);
+      matches = prefix.concat(other).slice(0, 8);
+      active = -1;
+      render();
+    }
+
+    function setActive(i) {
+      active = i;
+      Array.prototype.forEach.call(list.children, function (li, idx) {
+        li.className = idx === active ? "active" : "";
+      });
+      if (active >= 0) {
+        input.setAttribute("aria-activedescendant", "poi-search-opt-" + active);
+        list.children[active].scrollIntoView({ block: "nearest" });
+      } else {
+        input.removeAttribute("aria-activedescendant");
+      }
+    }
+
+    input.addEventListener("input", function () { search(input.value); });
+    input.addEventListener("focus", function () { if (input.value) search(input.value); });
+    input.addEventListener("blur", function () { close(); });
+
+    input.addEventListener("keydown", function (ev) {
+      if (ev.key === "ArrowDown") {
+        ev.preventDefault();
+        if (matches.length) setActive((active + 1) % matches.length);
+      } else if (ev.key === "ArrowUp") {
+        ev.preventDefault();
+        if (matches.length) setActive((active - 1 + matches.length) % matches.length);
+      } else if (ev.key === "Enter") {
+        if (matches.length) {
+          ev.preventDefault();
+          selectResult(matches[active >= 0 ? active : 0]);
+        }
+      } else if (ev.key === "Escape") {
+        close();
+        input.blur();
+      }
+    });
+  }
+
+  function selectResult(e) {
+    // Reveal the marker if the active filters are currently hiding it, so the
+    // user never jumps to an empty spot. A later applyFilters() will re-hide it.
+    if (!map.hasLayer(e.marker)) e.marker.addTo(map);
+    map.flyTo(e.marker.getLatLng(), Math.max(map.getZoom(), 17));
+    showDetail(e.props);
+    var input = document.getElementById("poi-search-input");
+    var list = document.getElementById("poi-search-results");
+    input.value = "";
+    list.hidden = true;
+    list.innerHTML = "";
+    input.setAttribute("aria-expanded", "false");
+    input.blur();
+  }
+
   // ---- Load data -------------------------------------------------------
   fetch("data/locations.json")
     .then(function (r) {
@@ -254,6 +376,7 @@
       }
       applyFilters();
       updateLabelVisibility();
+      initSearch();
     })
     .catch(function (err) {
       countEl.textContent = "Failed to load data";
