@@ -364,6 +364,111 @@
     for (var i = 0; i < cmEls.length; i++) cmEls[i].textContent = riderHeight;
   })();
 
+  // ---- Current location (GPS) -----------------------------------------
+  // A live "blue dot" driven by watchPosition. The map does NOT auto-follow;
+  // it only recenters once on the first fix and whenever the user asks (🎯).
+  var locateToggle = document.getElementById("locate-toggle");
+  var locateRecenter = document.getElementById("locate-recenter");
+  var locationWatchId = null;
+  var locationMarker = null;
+  var accuracyCircle = null;
+  var lastLocation = null; // L.latLng of the most recent fix
+
+  var locationIcon = L.divIcon({
+    className: "dlp-location",
+    html: '<div class="dot"></div>',
+    iconSize: [16, 16],
+    iconAnchor: [8, 8]
+  });
+
+  function locationSupported() {
+    return "geolocation" in navigator;
+  }
+
+  function onLocationFound(pos) {
+    var latlng = L.latLng(pos.coords.latitude, pos.coords.longitude);
+    var firstFix = lastLocation === null;
+    lastLocation = latlng;
+
+    if (locationMarker) {
+      locationMarker.setLatLng(latlng);
+    } else {
+      locationMarker = L.marker(latlng, {
+        icon: locationIcon,
+        interactive: false,
+        zIndexOffset: 1000
+      }).addTo(map);
+    }
+
+    if (accuracyCircle) {
+      accuracyCircle.setLatLng(latlng).setRadius(pos.coords.accuracy);
+    } else {
+      accuracyCircle = L.circle(latlng, {
+        radius: pos.coords.accuracy,
+        color: "#1a73e8",
+        weight: 1,
+        fillColor: "#1a73e8",
+        fillOpacity: 0.12,
+        interactive: false
+      }).addTo(map);
+    }
+
+    locateRecenter.hidden = false;
+    // Recenter once when tracking first acquires a position, then leave the
+    // map alone so it never fights the user's panning.
+    if (firstFix) recenterOnLocation();
+  }
+
+  function onLocationError(err) {
+    stopTracking();
+    var msg = "Could not get your location.";
+    if (err && err.code === 1) msg = "Location permission denied. Enable it in your browser to use this feature.";
+    else if (err && err.code === 3) msg = "Timed out while finding your location. Please try again.";
+    window.alert(msg);
+  }
+
+  function recenterOnLocation() {
+    if (!lastLocation) return;
+    map.setView(lastLocation, Math.max(map.getZoom(), 17));
+  }
+
+  function startTracking() {
+    if (!locationSupported()) {
+      window.alert("Your browser does not support location services.");
+      return;
+    }
+    locationWatchId = navigator.geolocation.watchPosition(
+      onLocationFound,
+      onLocationError,
+      { enableHighAccuracy: true, maximumAge: 10000, timeout: 20000 }
+    );
+    locateToggle.classList.add("active");
+    locateToggle.setAttribute("aria-pressed", "true");
+  }
+
+  function stopTracking() {
+    if (locationWatchId !== null) {
+      navigator.geolocation.clearWatch(locationWatchId);
+      locationWatchId = null;
+    }
+    if (locationMarker) { map.removeLayer(locationMarker); locationMarker = null; }
+    if (accuracyCircle) { map.removeLayer(accuracyCircle); accuracyCircle = null; }
+    lastLocation = null;
+    locateToggle.classList.remove("active");
+    locateToggle.setAttribute("aria-pressed", "false");
+    locateRecenter.hidden = true;
+  }
+
+  if (locationSupported()) {
+    locateToggle.addEventListener("click", function () {
+      if (locationWatchId === null) startTracking();
+      else stopTracking();
+    });
+    locateRecenter.addEventListener("click", recenterOnLocation);
+  } else {
+    locateToggle.hidden = true;
+  }
+
   // ---- Legend collapse -------------------------------------------------
   var legendToggle = document.getElementById("legend-toggle");
   var legendBody = document.getElementById("legend-body");
