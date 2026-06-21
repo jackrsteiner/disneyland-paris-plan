@@ -19,6 +19,7 @@ properties below.
     "queueEnv": "sun",            // queue environment: "ac" | "shaded" | "sun"
     "venueEnv": "outdoor",        // the experience itself: "indoor-ac" | "indoor" | "outdoor"
     "heightMin": 102,             // minimum rider height in cm, or null if there is no restriction
+    "summary": "Runaway mine train", // OPTIONAL: ≤5-word tagline (what the POI is); shown for attractions/shows/restaurants/shops
     "heatNote": "Free-text heat / strategy tip shown in the detail panel."
   }
 }
@@ -38,7 +39,7 @@ properties below.
 | `queueEnv` | yes | `ac`, `shaded`, `sun` | Queue heat exposure. Adds the ❄️ / ⛱️ / ☀️ badge and drives the "queue comfort" filter. |
 | `venueEnv` | yes | `indoor-ac`, `indoor`, `outdoor` | The experience/venue itself; drives the "venue" filter. |
 | `heightMin` | yes | integer cm or `null` | Minimum rider height; `null` = no restriction. |
-| `heatNote` | yes | string | Short strategy note in the detail panel. |
+| `summary` | no | string | Very brief tagline (≤5 words, prefer 3) describing **what the POI is**, shown as an italic accent-coloured line under the subtitle. Set it for attractions, shows, restaurants and shops; omit for characters and amenities (the line is hidden). Distinct from `heatNote`, which is the longer strategy tip in the orange box. |
 
 ## Heat model (two dimensions)
 

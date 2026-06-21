@@ -188,6 +188,7 @@
       '<p class="subtitle">' +
       (CATEGORY_EMOJI[p.category] || "") + " " + (CATEGORY_LABEL[p.category] || p.category) +
       " · " + (PARK_LABEL[p.park] || p.park) + "</p>" +
+      (p.summary ? '<p class="summary">' + p.summary + "</p>" : "") +
       attrRow("⚡", pa) +
       attrRow(q.emoji || "🚶", "<strong>Queue:</strong> " + q.label) +
       attrRow(v.emoji || "📍", "<strong>Venue:</strong> " + v.label) +
