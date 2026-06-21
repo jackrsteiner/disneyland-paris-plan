@@ -6,6 +6,7 @@
   --muted: #5a6573;
   --pa: #f5a623;
   --radius: 12px;
+  --icon-scale: 1; /* map pin / badge size multiplier, set from settings */
 }
 
 * { box-sizing: border-box; }
@@ -173,8 +174,8 @@ html, body {
 }
 .dlp-marker .pin {
   position: relative;
-  width: 34px;
-  height: 34px;
+  width: calc(34px * var(--icon-scale));
+  height: calc(34px * var(--icon-scale));
   border-radius: 50%;
   background: #fff;
   border: 2px solid var(--accent);
@@ -182,26 +183,26 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 19px;
+  font-size: calc(19px * var(--icon-scale));
   line-height: 1;
 }
 .dlp-marker .badge {
   position: absolute;
-  width: 17px;
-  height: 17px;
+  width: calc(17px * var(--icon-scale));
+  height: calc(17px * var(--icon-scale));
   border-radius: 50%;
   background: #fff;
   border: 1px solid #cdd4dc;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
+  font-size: calc(11px * var(--icon-scale));
   line-height: 1;
 }
-.dlp-marker .badge.queue { bottom: -3px; left: -4px; }
-.dlp-marker .badge.venue { bottom: -3px; right: -4px; }
-.dlp-marker .badge.pa { top: -3px; right: -4px; border-color: var(--pa); background: #fff7e8; }
-.dlp-marker .badge.height { top: -3px; left: -4px; }
+.dlp-marker .badge.queue { bottom: calc(-3px * var(--icon-scale)); left: calc(-4px * var(--icon-scale)); }
+.dlp-marker .badge.venue { bottom: calc(-3px * var(--icon-scale)); right: calc(-4px * var(--icon-scale)); }
+.dlp-marker .badge.pa { top: calc(-3px * var(--icon-scale)); right: calc(-4px * var(--icon-scale)); border-color: var(--pa); background: #fff7e8; }
+.dlp-marker .badge.height { top: calc(-3px * var(--icon-scale)); left: calc(-4px * var(--icon-scale)); }
 .dlp-marker .badge.height.ok { border-color: #3aa55c; background: #eef9f1; }
 .dlp-marker .badge.height.no { border-color: #d9534f; background: #fdecea; }
 
@@ -334,6 +335,12 @@ html, body {
   padding: 7px 9px;
   border: 1px solid #cdd4dc;
   border-radius: 8px;
+}
+.settings-row input[type="range"] {
+  padding: 0;
+  border: 0;
+  accent-color: var(--accent);
+  cursor: pointer;
 }
 .settings-help {
   font-size: 12px;
