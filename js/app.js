@@ -51,6 +51,28 @@
   }
   var riderHeight = loadRiderHeight();
 
+  // Icon size multiplier for map pins & badges. 1 = the default 34 px pin.
+  // Adjustable from the ⚙️ settings modal and persisted to localStorage.
+  var ICON_SCALE_DEFAULT = 1;
+  var ICON_SCALE_MIN = 0.5;
+  var ICON_SCALE_MAX = 3;
+  var ICON_BASE_SIZE = 34; // px, must match .dlp-marker .pin in styles.css
+  var ICON_SCALE_KEY = "dlp-icon-scale";
+
+  function clampIconScale(s) {
+    return Math.max(ICON_SCALE_MIN, Math.min(ICON_SCALE_MAX, s));
+  }
+  function loadIconScale() {
+    try {
+      var v = parseFloat(window.localStorage.getItem(ICON_SCALE_KEY));
+      if (!isNaN(v) && v >= ICON_SCALE_MIN && v <= ICON_SCALE_MAX) return v;
+    } catch (e) { /* localStorage unavailable */ }
+    return ICON_SCALE_DEFAULT;
+  }
+  var iconScale = loadIconScale();
+  // Expose the scale to CSS so pins/badges resize via calc(); see styles.css.
+  document.documentElement.style.setProperty("--icon-scale", iconScale);
+
   function canRide(p) {
     return p.heightMin == null || p.heightMin <= riderHeight;
   }
@@ -94,12 +116,27 @@
       '<span class="badge venue" title="' + v.label + '">' + v.emoji + "</span>" +
       paBadge +
       "</div>";
+    var size = Math.round(ICON_BASE_SIZE * iconScale);
+    var half = size / 2;
     return L.divIcon({
       className: "dlp-marker",
       html: html,
-      iconSize: [34, 34],
-      iconAnchor: [17, 17],
-      popupAnchor: [0, -16]
+      iconSize: [size, size],
+      iconAnchor: [half, half],
+      popupAnchor: [0, -half + 1]
+    });
+  }
+
+  // Permanent name label, offset to sit just right of the (scaled) pin.
+  function labelOffset() {
+    return [Math.round(14 * iconScale), 0];
+  }
+  function bindLabel(marker, p) {
+    marker.bindTooltip(p.shortName || p.name, {
+      permanent: true,
+      direction: "right",
+      offset: labelOffset(),
+      className: "dlp-label"
     });
   }
 
@@ -203,12 +240,7 @@
         var latlng = [c[1], c[0]];
         var p = f.properties;
         var marker = L.marker(latlng, { icon: buildIcon(p) });
-        marker.bindTooltip(p.shortName || p.name, {
-          permanent: true,
-          direction: "right",
-          offset: [14, 0],
-          className: "dlp-label"
-        });
+        bindLabel(marker, p);
         marker.on("click", function () {
           showDetail(p);
         });
@@ -330,6 +362,10 @@
   }
   function openSettings() {
     heightInput.value = riderHeight;
+    if (iconScaleInput) {
+      iconScaleInput.value = iconScale;
+      if (iconScaleVal) iconScaleVal.textContent = iconScale.toFixed(1) + "×";
+    }
     lastFocus = document.activeElement;
     settingsBackdrop.hidden = false;
     settingsModal.hidden = false;
@@ -363,6 +399,165 @@
     var cmEls = document.querySelectorAll(".rider-height-cm");
     for (var i = 0; i < cmEls.length; i++) cmEls[i].textContent = riderHeight;
   })();
+
+  // ---- Icon size --------------------------------------------------------
+  // Pin/badge dimensions come from the --icon-scale CSS variable; the divIcon
+  // size & anchor (and label offset) are baked in, so a change rebuilds icons.
+  var iconScaleInput = document.getElementById("icon-scale-input");
+  var iconScaleVal = document.getElementById("icon-scale-val");
+
+  function rebuildAllIcons() {
+    entries.forEach(function (e) {
+      e.marker.setIcon(buildIcon(e.props));
+      e.marker.unbindTooltip();
+      bindLabel(e.marker, e.props);
+    });
+  }
+  function refreshIconScaleUI() {
+    document.documentElement.style.setProperty("--icon-scale", iconScale);
+    if (iconScaleVal) iconScaleVal.textContent = iconScale.toFixed(1) + "×";
+    rebuildAllIcons();
+  }
+  function setIconScale(s) {
+    s = parseFloat(s);
+    if (isNaN(s)) return;
+    iconScale = clampIconScale(s);
+    try { window.localStorage.setItem(ICON_SCALE_KEY, String(iconScale)); } catch (e) { /* ignore */ }
+    refreshIconScaleUI();
+  }
+
+  iconScaleInput.addEventListener("input", function () {
+    setIconScale(iconScaleInput.value);
+  });
+
+  (function initIconScale() {
+    iconScaleInput.value = iconScale;
+    if (iconScaleVal) iconScaleVal.textContent = iconScale.toFixed(1) + "×";
+  })();
+
+  // ---- Restore defaults -------------------------------------------------
+  // Resets the settings-menu options (rider height + icon size) to their
+  // defaults, clears their stored values, and refreshes the map. Legend
+  // filters have their own "Reset filters" control and are left untouched.
+  function restoreDefaults() {
+    if (!window.confirm("Restore all settings to their default values?")) return;
+    riderHeight = RIDER_HEIGHT_DEFAULT;
+    iconScale = ICON_SCALE_DEFAULT;
+    try {
+      window.localStorage.removeItem(RIDER_HEIGHT_KEY);
+      window.localStorage.removeItem(ICON_SCALE_KEY);
+    } catch (e) { /* localStorage unavailable */ }
+    refreshHeightUI();
+    refreshIconScaleUI();
+    heightInput.value = riderHeight;
+    iconScaleInput.value = iconScale;
+  }
+  document.getElementById("restore-defaults").addEventListener("click", restoreDefaults);
+
+  // ---- Current location (GPS) -----------------------------------------
+  // A live "blue dot" driven by watchPosition. The map does NOT auto-follow;
+  // it only recenters once on the first fix and whenever the user asks (🎯).
+  var locateToggle = document.getElementById("locate-toggle");
+  var locateRecenter = document.getElementById("locate-recenter");
+  var locationWatchId = null;
+  var locationMarker = null;
+  var accuracyCircle = null;
+  var lastLocation = null; // L.latLng of the most recent fix
+
+  var locationIcon = L.divIcon({
+    className: "dlp-location",
+    html: '<div class="dot"></div>',
+    iconSize: [16, 16],
+    iconAnchor: [8, 8]
+  });
+
+  function locationSupported() {
+    return "geolocation" in navigator;
+  }
+
+  function onLocationFound(pos) {
+    var latlng = L.latLng(pos.coords.latitude, pos.coords.longitude);
+    var firstFix = lastLocation === null;
+    lastLocation = latlng;
+
+    if (locationMarker) {
+      locationMarker.setLatLng(latlng);
+    } else {
+      locationMarker = L.marker(latlng, {
+        icon: locationIcon,
+        interactive: false,
+        zIndexOffset: 1000
+      }).addTo(map);
+    }
+
+    if (accuracyCircle) {
+      accuracyCircle.setLatLng(latlng).setRadius(pos.coords.accuracy);
+    } else {
+      accuracyCircle = L.circle(latlng, {
+        radius: pos.coords.accuracy,
+        color: "#1a73e8",
+        weight: 1,
+        fillColor: "#1a73e8",
+        fillOpacity: 0.12,
+        interactive: false
+      }).addTo(map);
+    }
+
+    locateRecenter.hidden = false;
+    // Recenter once when tracking first acquires a position, then leave the
+    // map alone so it never fights the user's panning.
+    if (firstFix) recenterOnLocation();
+  }
+
+  function onLocationError(err) {
+    stopTracking();
+    var msg = "Could not get your location.";
+    if (err && err.code === 1) msg = "Location permission denied. Enable it in your browser to use this feature.";
+    else if (err && err.code === 3) msg = "Timed out while finding your location. Please try again.";
+    window.alert(msg);
+  }
+
+  function recenterOnLocation() {
+    if (!lastLocation) return;
+    map.setView(lastLocation, Math.max(map.getZoom(), 17));
+  }
+
+  function startTracking() {
+    if (!locationSupported()) {
+      window.alert("Your browser does not support location services.");
+      return;
+    }
+    locationWatchId = navigator.geolocation.watchPosition(
+      onLocationFound,
+      onLocationError,
+      { enableHighAccuracy: true, maximumAge: 10000, timeout: 20000 }
+    );
+    locateToggle.classList.add("active");
+    locateToggle.setAttribute("aria-pressed", "true");
+  }
+
+  function stopTracking() {
+    if (locationWatchId !== null) {
+      navigator.geolocation.clearWatch(locationWatchId);
+      locationWatchId = null;
+    }
+    if (locationMarker) { map.removeLayer(locationMarker); locationMarker = null; }
+    if (accuracyCircle) { map.removeLayer(accuracyCircle); accuracyCircle = null; }
+    lastLocation = null;
+    locateToggle.classList.remove("active");
+    locateToggle.setAttribute("aria-pressed", "false");
+    locateRecenter.hidden = true;
+  }
+
+  if (locationSupported()) {
+    locateToggle.addEventListener("click", function () {
+      if (locationWatchId === null) startTracking();
+      else stopTracking();
+    });
+    locateRecenter.addEventListener("click", recenterOnLocation);
+  } else {
+    locateToggle.hidden = true;
+  }
 
   // ---- Legend collapse -------------------------------------------------
   var legendToggle = document.getElementById("legend-toggle");
