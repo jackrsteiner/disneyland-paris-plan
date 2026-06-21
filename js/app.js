@@ -435,6 +435,25 @@
     if (iconScaleVal) iconScaleVal.textContent = iconScale.toFixed(1) + "×";
   })();
 
+  // ---- Restore defaults -------------------------------------------------
+  // Resets the settings-menu options (rider height + icon size) to their
+  // defaults, clears their stored values, and refreshes the map. Legend
+  // filters have their own "Reset filters" control and are left untouched.
+  function restoreDefaults() {
+    if (!window.confirm("Restore all settings to their default values?")) return;
+    riderHeight = RIDER_HEIGHT_DEFAULT;
+    iconScale = ICON_SCALE_DEFAULT;
+    try {
+      window.localStorage.removeItem(RIDER_HEIGHT_KEY);
+      window.localStorage.removeItem(ICON_SCALE_KEY);
+    } catch (e) { /* localStorage unavailable */ }
+    refreshHeightUI();
+    refreshIconScaleUI();
+    heightInput.value = riderHeight;
+    iconScaleInput.value = iconScale;
+  }
+  document.getElementById("restore-defaults").addEventListener("click", restoreDefaults);
+
   // ---- Current location (GPS) -----------------------------------------
   // A live "blue dot" driven by watchPosition. The map does NOT auto-follow;
   // it only recenters once on the first fix and whenever the user asks (🎯).
