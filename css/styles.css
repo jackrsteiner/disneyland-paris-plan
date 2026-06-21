@@ -270,6 +270,13 @@ html, body {
   color: var(--muted);
   margin: 0 0 12px;
 }
+.detail .summary {
+  font-size: 13.5px;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--accent);
+  margin: -6px 0 12px;
+}
 .detail .attr {
   display: flex;
   gap: 9px;

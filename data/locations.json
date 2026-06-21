@@ -20,6 +20,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": 102,
+        "summary": "Runaway mine train",
         "heatNote": "Sun-baked outdoor queue on the island. Use Premier Access or save for the cooler evening."
       }
     },
@@ -35,6 +36,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor",
         "heightMin": null,
+        "summary": "Haunted Western mansion",
         "heatNote": "Mostly indoor and shaded queue; good midday heat break. Slow boats/cars in the cool dark."
       }
     },
@@ -51,6 +53,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Indoor pirate boat ride",
         "heatNote": "Excellent cooling refuge — cool stone interior queue and a long indoor boat ride. No Premier Access, but the indoor queue itself is pleasant in the heat."
       }
     },
@@ -67,6 +70,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": 140,
+        "summary": "Outdoor jungle coaster",
         "heatNote": "Outdoor jungle queue and outdoor coaster. Use Premier Access; tall riders only (140 cm)."
       }
     },
@@ -82,6 +86,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Outdoor exploration walkthrough",
         "heatNote": "Outdoor walkthrough with lots of climbing and stairs — tough on a knee and in full sun. Skip at midday."
       }
     },
@@ -98,6 +103,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Sing-along boat cruise",
         "heatNote": "Indoor air-conditioned boat ride, covered queue. Ideal cooling break for a young child."
       }
     },
@@ -114,6 +120,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor",
         "heightMin": null,
+        "summary": "Flying dark ride",
         "heatNote": "Indoor queue and ride — cool and shaded, but a perennial long line. Premier Access strongly recommended."
       }
     },
@@ -130,6 +137,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Spinning elephant ride",
         "heatNote": "Fully exposed outdoor queue with slow loading. Avoid in midday heat; ride early or after dusk."
       }
     },
@@ -146,6 +154,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Medieval carousel",
         "heatNote": "Outdoor carousel, short queue. Roof gives a little shade once aboard."
       }
     },
@@ -162,6 +171,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor",
         "heightMin": null,
+        "summary": "Spinning teacup ride",
         "heatNote": "Spinning cups under a covered canopy — shaded but not air-conditioned."
       }
     },
@@ -178,6 +188,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Outdoor hedge maze",
         "heatNote": "Outdoor hedge maze in full sun with lots of walking. Poor choice during peak heat."
       }
     },
@@ -194,6 +205,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Miniature storybook boat ride",
         "heatNote": "Gentle outdoor canal boat. Exposed queue but the ride itself is calm and breezy."
       }
     },
@@ -210,6 +222,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "4D animated film",
         "heatNote": "Indoor seated 4D cinema — one of the best air-conditioned refuges. Frequent showings keep the queue short."
       }
     },
@@ -226,6 +239,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": 120,
+        "summary": "Indoor space coaster",
         "heatNote": "Indoor air-conditioned queue and ride. Cool refuge and a headliner — use Premier Access. 120 cm minimum."
       }
     },
@@ -242,6 +256,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": 102,
+        "summary": "Star Wars motion simulator",
         "heatNote": "Fully indoor air-conditioned queue and simulator — a top midday cooling refuge. 102 cm minimum."
       }
     },
@@ -258,6 +273,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Interactive laser shooter",
         "heatNote": "Indoor air-conditioned queue and shooting ride. Great cool break for all ages."
       }
     },
@@ -273,6 +289,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Spinning rocket ride",
         "heatNote": "Exposed outdoor spinner. Skip in peak heat."
       }
     },
@@ -288,6 +305,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": 81,
+        "summary": "Drive-yourself car circuit",
         "heatNote": "Hot petrol cars in a fully exposed queue and track — one of the worst heat options. 81 cm to ride with an adult."
       }
     },
@@ -304,6 +322,7 @@
         "queueEnv": "shaded",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Steam train station",
         "heatNote": "Covered station platform; a shaded way to circle the park and rest the legs, though trains are open-air."
       }
     },
@@ -320,6 +339,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Daytime character parade",
         "heatNote": "Daytime parade along Main Street — viewing spots are in full sun. Grab shade or skip in favour of the evening show."
       }
     },
@@ -336,6 +356,7 @@
         "queueEnv": "shaded",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Nighttime castle spectacular",
         "heatNote": "After-dark show on the castle — cooler evening timing. Stake out a spot late, not during the heat of the day."
       }
     },
@@ -352,6 +373,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Live stage musical",
         "heatNote": "Indoor air-conditioned theatre show at Chaparral Theater — excellent way to sit out the midday heat. Check showtimes."
       }
     },
@@ -368,6 +390,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Table-service American dining",
         "heatNote": "Air-conditioned table service on Main Street. Book ahead; a comfortable midday escape."
       }
     },
@@ -384,6 +407,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Buffet-service American fare",
         "heatNote": "Air-conditioned buffet near the castle. Good for an early lunch (≈11:15) before the rush and the heat."
       }
     },
@@ -399,6 +423,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor",
         "heightMin": null,
+        "summary": "Counter-service hot dogs",
         "heatNote": "Counter-service hot dogs on Main Street. Indoor seating is shaded but only lightly cooled."
       }
     },
@@ -415,6 +440,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor",
         "heightMin": null,
+        "summary": "Counter-service barbecue",
         "heatNote": "Counter-service barbecue in a covered barn — shaded but not strongly air-conditioned."
       }
     },
@@ -431,6 +457,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Table-service Caribbean dining",
         "heatNote": "Table service inside Pirates of the Caribbean — dark, cool and air-conditioned. One of the best midday refuges. Book ahead."
       }
     },
@@ -447,6 +474,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Counter-service comfort food",
         "heatNote": "Large air-conditioned counter-service in Fantasyland — handy cool lunch spot for families."
       }
     },
@@ -462,6 +490,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Counter-service burgers",
         "heatNote": "Huge air-conditioned counter-service hall in Discoveryland — lots of cool indoor seating to escape the midday sun."
       }
     },
@@ -477,6 +506,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Main Street gift shop",
         "heatNote": "Large air-conditioned Main Street store — a long cool browse, and you can walk much of Main Street indoors through connected shops."
       }
     },
@@ -493,6 +523,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Frontierland gift shop",
         "heatNote": "Air-conditioned Frontierland store — a cool stop between Big Thunder and Phantom Manor."
       }
     },
@@ -573,6 +604,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor",
         "heightMin": null,
+        "summary": "Snow White dark ride",
         "heatNote": "Indoor Fantasyland dark ride with a covered queue — a quick, cool shaded break for little ones."
       }
     },
@@ -589,6 +621,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor",
         "heightMin": null,
+        "summary": "Pinocchio dark ride",
         "heatNote": "Indoor dark ride next to Snow White; covered queue and a cool, gentle ride."
       }
     },
@@ -605,6 +638,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Kiddie circus-train coaster",
         "heatNote": "Outdoor kiddie coaster around Storybook Land. Exposed queue — ride early or in the cooler evening."
       }
     },
@@ -621,6 +655,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor",
         "heightMin": null,
+        "summary": "Submarine walkthrough",
         "heatNote": "Walk-through of Captain Nemo's submarine — indoor, dark and cool with no real queue. A handy Discoveryland heat refuge."
       }
     },
@@ -637,6 +672,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor",
         "heightMin": null,
+        "summary": "Dragon cave walkthrough",
         "heatNote": "The dragon's cave beneath the castle — a short, dark, cool walk-through. Stairs at the entrance/exit. Good quick escape from the sun."
       }
     },
@@ -668,6 +704,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor",
         "heightMin": null,
+        "summary": "Aladdin story walkthrough",
         "heatNote": "Indoor Aladdin story walk-through in Adventureland — shaded, brief and crowd-free; a small heat break with no height limit."
       }
     },
@@ -684,6 +721,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Paddle-steamer river cruise",
         "heatNote": "Paddle-steamer cruise around Big Thunder. Exposed open-air deck and queue, but a breezy way to rest the legs."
       }
     },
@@ -700,6 +738,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Western shooting gallery",
         "heatNote": "Outdoor coin-op shooting gallery in Frontierland (small extra fee). Fully exposed — quick stop only."
       }
     },
@@ -716,6 +755,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Vintage Main Street ride",
         "heatNote": "Vintage cars and horse-drawn streetcars up Main Street. Open-air and weather-dependent — a leg-saver, not a heat escape."
       }
     },
@@ -732,6 +772,7 @@
         "queueEnv": "shaded",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Steam train station",
         "heatNote": "Covered station platform in Frontierland; a shaded place to board the train and circle the park while resting."
       }
     },
@@ -748,6 +789,7 @@
         "queueEnv": "shaded",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Steam train station",
         "heatNote": "Covered Fantasyland station platform; shaded boarding point for a restful loop of the park."
       }
     },
@@ -764,6 +806,7 @@
         "queueEnv": "shaded",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Steam train station",
         "heatNote": "Covered Discoveryland station platform; shaded boarding point and a way to skip a hot walk back to Main Street."
       }
     },
@@ -780,6 +823,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Indoor theatre show",
         "heatNote": "Large air-conditioned Discoveryland theatre (currently The Jungle Book show). One of the best seated midday cool-downs — check showtimes."
       }
     },
@@ -796,6 +840,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor-ac",
         "heightMin": 102,
+        "summary": "Haunted free-fall drop",
         "heatNote": "Indoor air-conditioned queue and ride — cool refuge as well as a thrill. Use Premier Access. 102 cm minimum."
       }
     },
@@ -811,6 +856,7 @@
         "queueEnv": "sun",
         "venueEnv": "indoor",
         "heightMin": 107,
+        "summary": "Spinning turtle coaster",
         "heatNote": "Notoriously long, fully exposed outdoor queue — brutal in the heat. Premier Access is almost essential here. 107 cm minimum."
       }
     },
@@ -827,6 +873,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Trackless 4D rat chase",
         "heatNote": "Mostly indoor, air-conditioned trackless ride with a partly covered queue — a strong cool headliner. Use Premier Access."
       }
     },
@@ -842,6 +889,7 @@
         "queueEnv": "shaded",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Scenic Cars tram ride",
         "heatNote": "Covered queue but an open-air tram ride through outdoor scenes. Pleasant in the morning or evening."
       }
     },
@@ -857,6 +905,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": 120,
+        "summary": "Half-pipe thrill ride",
         "heatNote": "Exposed outdoor queue and ride in Toy Story Playland. Use Premier Access; 120 cm minimum."
       }
     },
@@ -873,6 +922,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": 81,
+        "summary": "Kid-friendly drop tower",
         "heatNote": "Fully exposed Toy Story Playland queue. Use Premier Access; 81 cm minimum."
       }
     },
@@ -889,6 +939,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Slinky Dog spinner",
         "heatNote": "Exposed outdoor spinner for younger kids. Best early or late, not midday."
       }
     },
@@ -905,6 +956,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Interactive Spider-Man ride",
         "heatNote": "Indoor air-conditioned queue and interactive ride in Avengers Campus — great family cool break. Use Premier Access."
       }
     },
@@ -921,6 +973,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": 120,
+        "summary": "Indoor launch coaster",
         "heatNote": "Indoor air-conditioned launch coaster in Avengers Campus. Use Premier Access; 120 cm minimum."
       }
     },
@@ -936,6 +989,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Frozen boat ride",
         "heatNote": "New World of Frozen indoor air-conditioned boat ride — cool and gentle, ideal for a 3-year-old. Expect big demand; use Premier Access."
       }
     },
@@ -952,6 +1006,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Pixar stage musical",
         "heatNote": "Indoor air-conditioned theatre musical — a comfortable, seated midday cool-down. Check showtimes."
       }
     },
@@ -968,6 +1023,7 @@
         "queueEnv": "shaded",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Mickey magic stage show",
         "heatNote": "Indoor air-conditioned stage show at Animagique Theater — excellent heat refuge with great air-conditioning."
       }
     },
@@ -984,6 +1040,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Outdoor Frozen show",
         "heatNote": "Outdoor show in Arendelle — viewing is in the sun. Find shade or catch a later performance."
       }
     },
@@ -1000,6 +1057,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Table-service French bistro",
         "heatNote": "Air-conditioned table service beside Ratatouille — a cool, fun lunch. Book ahead."
       }
     },
@@ -1015,6 +1073,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Marvel buffet restaurant",
         "heatNote": "Air-conditioned buffet in Avengers Campus — plenty of cool indoor seating during the hot hours."
       }
     },
@@ -1030,6 +1089,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Counter-service Italian food",
         "heatNote": "Large air-conditioned Italian counter/table service in Avengers Campus — easy cool lunch."
       }
     },
@@ -1046,6 +1106,7 @@
         "queueEnv": "ac",
         "venueEnv": "indoor-ac",
         "heightMin": null,
+        "summary": "Frozen merchandise & treats",
         "heatNote": "Air-conditioned shop and tavern in Arendelle — a cool stop in the newest land."
       }
     },
@@ -1078,6 +1139,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Cars-themed spinner",
         "heatNote": "Outdoor Cars-themed spinner. Exposed queue and ride — best in the morning or evening, not at midday."
       }
     },
@@ -1094,6 +1156,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Tangled spinner ride",
         "heatNote": "New Tangled-themed outdoor spinner on the edge of World of Frozen. Exposed — ride outside the peak heat."
       }
     },
@@ -1110,6 +1173,7 @@
         "queueEnv": "sun",
         "venueEnv": "outdoor",
         "heightMin": null,
+        "summary": "Magic-carpet spinner",
         "heatNote": "Aladdin magic-carpet spinner. Fully exposed queue and ride; one for the cooler parts of the day."
       }
     }
